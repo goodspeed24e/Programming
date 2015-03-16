@@ -1,0 +1,18 @@
+-- 
+-- 資料表格式： `outinv`
+-- 
+
+CREATE TABLE `outinv` (
+  `outicode` varchar(2) NOT NULL,
+  `outino` varchar(10) NOT NULL,
+  `outiprodno` varchar(10) NOT NULL,
+  `outidate` date default NULL,
+  `outiremark` varchar(100) default NULL,
+  `outicustno` varchar(10) NOT NULL,
+  `outiprodname` varchar(40) default NULL,
+  `outiprodqty` int(6) NOT NULL,
+  `outiunit` varchar(10) NOT NULL,
+  `outipric` int(6) NOT NULL,
+  `outiamt` int(8) default NULL,
+  PRIMARY KEY  (`outino`,`outiprodno`)
+) ENGINE=MyISAM DEFAULT CHARSET=big5;

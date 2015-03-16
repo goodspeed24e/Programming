@@ -1,0 +1,12 @@
+-- 
+-- 資料表格式： `purchase`
+-- 
+
+CREATE TABLE `purchase` (
+  `purchtranno` varchar(10) NOT NULL,
+  `purchprodno` varchar(10) NOT NULL,
+  `purchprodqty` int(6) NOT NULL,
+  `purchinqty` int(6) NOT NULL,
+  `purchpric` int(6) NOT NULL,
+  PRIMARY KEY  (`purchtranno`,`purchprodno`)
+) ENGINE=MyISAM DEFAULT CHARSET=big5;

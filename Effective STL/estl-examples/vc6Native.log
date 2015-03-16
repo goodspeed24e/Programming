@@ -1,0 +1,335 @@
+Compiled with CC = call docl /silent
+INCLUDE = e:\VC98\ATL\INCLUDE;e:\VC98\INCLUDE;e:\VC98\MFC\INCLUDE;
+
+Running: cl /silent 0.cpp
+0.cpp
+
+Running: cl /silent 2-1.cpp
+2-1.cpp
+
+Running: cl /silent 2-2.cpp
+2-2.cpp
+
+Running: cl /silent 2-3.cpp
+2-3.cpp
+
+Running: cl /silent 2-4.cpp
+2-4.cpp
+
+Running: cl /silent 2-5.cpp
+2-5.cpp
+
+Running: cl /silent 3-1.cpp
+3-1.cpp
+
+Running: cl /silent 4-1.cpp
+4-1.cpp
+
+Running: cl /silent 5-1.cpp
+5-1.cpp
+
+Running: cl /silent 5-2.cpp
+5-2.cpp
+
+Running: cl /silent 6-1.cpp
+
+6-1.cpp ------ MSVC Library problem -------
+6-1.cpp(41) : error C2664: 'list<int>(unsigned int,const int &)' : cannot convert parameter 1 from 'istream_IT<int>' to 'unsigned int'
+        No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+
+Running: cl /silent 7-1.cpp
+7-1.cpp
+
+Running: cl /silent 7-2.cpp
+7-2.cpp
+
+Running: cl /silent 7-3.cpp
+7-3.cpp  -------- VC++ bug -----------
+7-3.cpp(23) : error C2665: 'delete' : none of the 2 overloads can convert parameter 1 from type 'const Widget *'
+        7-3.cpp(23) : while compiling class-template member function 'void DeleteObject<Widget>::operator ()(const Widget *) const'
+
+Running: cl /silent 7-4.cpp
+7-4.cpp
+
+Running: cl /silent 7-5.cpp
+7-5.cpp
+
+Running: cl /silent 7-6.cpp
+7-6.cpp ------------- OK with boost lib in include path -------------------
+7-6.cpp(10) : fatal error C1083: Cannot open include file: 'boost/smart_ptr.hpp': No such file or directory
+
+Running: cl /silent 8-1.cpp
+8-1.cpp
+
+Running: cl /silent 8-2.cpp
+8-2.cpp ------ added operator<<, now compiles when it really shouldn't! -------
+ESTLUtil.h(226) : error C2679: binary '<<' : no operator defined which takes a right-hand operand of type 'const auto_ptr<Widget>' (or there is no acceptable conversion)
+        ESTLUtil.h(275) : see reference to function template instantiation 'void ESTLUtils::printValue(ostream &,const auto_ptr<Widget> &,ESTLUtils::IsNothingSpecial)' being compiled
+
+Running: cl /silent 9-1.cpp
+9-1.cpp
+
+Running: cl /silent 9-2.cpp
+9-2.cpp ----- some kind of library problem ------------
+9-2.cpp(46) : error C2664: 'remove_if' : cannot convert parameter 1 from 'bool (int)' to 'binder2nd<not_equal_to<int>>'
+        No constructor could take the source type, or constructor overload resolution was ambiguous
+
+Running: cl /silent 9-3.cpp
+9-3.cpp
+
+Running: cl /silent 9-4.cpp
+9-4.cpp
+
+Running: cl /silent 10-1.cpp
+10-1.cpp ------- msvc problem ---------------
+e:\VC98\INCLUDE\list(386) : error C2039: '_Charalloc' : is not a member of 'SpecialAllocator<Widget>'
+        e:\VC98\INCLUDE\list(386) : while compiling class-template member function 'list<Widget,MyLib::SpecialAllocator<Widget>>::_Node *list<Widget,MyLib::SpecialAllocator<Widget>>::_Buynode(list<Widget,MyLib::SpecialAllocator<Widget>>::_Node *,list<Widget,MyLib::SpecialAllocator<Widget>>::_Node *)'
+
+Running: cl /silent 11-1.cpp
+11-1.cpp ------- msvc problem ---------------
+e:\VC98\INCLUDE\list(386) : error C2039: '_Charalloc' : is not a member of 'SpecificHeapAllocator<Widget,Heap2>'
+        e:\VC98\INCLUDE\list(386) : while compiling class-template member function 'list<Widget,MyLib::SpecificHeapAllocator<Widget,Heap2>>::_Node *list<Widget,MyLib::SpecificHeapAllocator<Widget,Heap2>>::_Buynode(list<Widget,MyLib::SpecificHeapAllocator<Widget,Heap2>>::_Node *,list<Widget,MyLib::SpecificHeapAllocator<Widget,Heap2>>::_Node *)'
+
+Running: cl /silent 12-1.cpp
+12-1.cpp
+
+Running: cl /silent 12-2.cpp
+12-2.cpp
+
+Running: cl /silent 14-1.cpp
+14-1.cpp
+14-1.cpp(31) : error C2039: 'push_back' : is not a member of 'string'
+
+Running: cl /silent 16-1.cpp
+16-1.cpp
+
+Running: cl /silent 16-2.cpp
+
+16-2.cpp ------------ MSVC lacks range insert -----------------
+16-2.cpp(81) : error C2664: 'deque<double>(unsigned int,const double &)' : cannot convert parameter 1 from 'double [7]' to 'unsigned int'
+        This conversion requires a reinterpret_cast, a C-style cast or function-style cast
+
+Running: cl /silent 16-3.cpp
+
+16-3.cpp ----------- MSVC lacks range insert ----------------
+16-3.cpp(32) : error C2664: 'vector<int>(unsigned int,const int &)' : cannot convert parameter 1 from 'IT' to 'unsigned int'
+        No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+
+Running: cl /silent 17-1.cpp
+
+17-1.cpp ---------- MSVC string lacks push_back
+17-1.cpp(43) : error C2039: 'push_back' : is not a member of 'string'
+
+Running: cl /silent 18-1.cpp
+18-1.cpp
+
+Running: cl /silent 19-1.cpp
+19-1.cpp
+
+Running: cl /silent 19-1.cpp
+19-1.cpp
+
+Running: cl /silent 20-1.cpp
+20-1.cpp
+
+Running: cl /silent 20-2.cpp
+20-2.cpp --------- resolved ---------------------
+20-2.cpp(80) : error C2440: 'initializing' : cannot convert from 'set<string *>::IT' to 'set<string *>::const_IT'
+        No constructor could take the source type, or constructor overload resolution was ambiguous
+20-2.cpp(81) : error C2679: binary '!=' : no operator defined which takes a right-hand operand of type 'set<string *>::IT' (or there is no acceptable conversion)
+
+Running: cl /silent 21-1.cpp
+21-1.cpp
+
+Running: cl /silent 21-2.cpp
+
+21-2.cpp ---------- resolved  -------------------
+21-2.cpp(44) : error C2440: 'initializing' : cannot convert from 'set<string *>::IT' to 'set<string *>::const_IT'
+        No constructor could take the source type, or constructor overload resolution was ambiguous
+21-2.cpp(45) : error C2679: binary '!=' : no operator defined which takes a right-hand operand of type 'set<string *>::IT' (or there is no acceptable conversion)
+
+Running: cl /silent 21-3.cpp
+
+21-3.cpp ---------- resolved -------------------
+21-3.cpp(42) : error C2440: 'initializing' : cannot convert from 'set<string *>::IT' to 'set<string *>::const_IT'
+        No constructor could take the source type, or constructor overload resolution was ambiguous
+21-3.cpp(43) : error C2679: binary '!=' : no operator defined which takes a right-hand operand of type 'set<string *>::IT' (or there is no acceptable conversion)
+
+Running: cl /silent 21-4.cpp
+21-4.cpp
+
+Running: cl /silent 22-1.cpp
+22-1.cpp --------- on purpose ------------------
+22-1.cpp(22) : error C2166: l-value specifies const object
+22-1.cpp(30) : error C2166: l-value specifies const object
+
+Running: cl /silent 22-2.cpp
+22-2.cpp
+
+Running: cl /silent 23-1.cpp
+23-1.cpp
+
+Running: cl /silent 23-2.cpp
+23-2.cpp
+
+Running: cl /silent 24-1.cpp
+24-1.cpp
+
+Running: cl /silent 25-1.cpp
+25-1.cpp --------------- nonstandard container, OK -------------------
+25-1.cpp(7) : fatal error C1083: Cannot open include file: 'hash_set': No such file or directory
+
+Running: cl /silent 26-1.cpp
+26-1.cpp -------- on purpose error ---------------------------------
+26-1.cpp(30) : error C2679: binary '==' : no operator defined which takes a right-hand operand of type 'deque<int>::const_IT' (or there is no acceptable conversion)
+
+Running: cl /silent 27-1.cpp
+27-1.cpp
+
+Running: cl /silent 28-1.cpp
+28-1.cpp
+
+Running: cl /silent 29-1.cpp
+29-1.cpp ------------ all member template issues -----------------------------
+29-1.cpp(20) : error C2664: 'string(const char *,unsigned int)' : cannot convert parameter 1 from 'istream_IT<char>' to 'const char *'
+        No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+29-1.cpp(35) : error C2664: 'string(const char *,unsigned int)' : cannot convert parameter 1 from 'istream_IT<char>' to 'const char *'
+        No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+29-1.cpp(44) : error C2664: 'string(const char *,unsigned int)' : cannot convert parameter 1 from 'istreambuf_IT<char,char_traits<char>>' to 'const char *'
+        No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+
+Running: cl /silent 30-1.cpp
+30-1.cpp
+
+Running: cl /silent 31-1.cpp
+31-1.cpp
+
+Running: cl /silent 32-1.cpp
+32-1.cpp
+
+Running: cl /silent 33-1.cpp
+33-1.cpp ------------ OK with Boost config ----------------------------------
+smart_ptr.h(52) : fatal error C1083: Cannot open include file: 'boost/config.hpp': No such file or directory
+
+Running: cl /silent 34-1.cpp
+34-1.cpp
+
+Running: cl /silent 35-1.cpp
+35-1.cpp
+
+Running: cl /silent 35-2.cpp
+35-2.cpp
+
+Running: cl /silent 35-3.cpp
+35-3.cpp
+
+Running: cl /silent 36-1.cpp
+36-1.cpp
+
+Running: cl /silent 37-1.cpp
+37-1.cpp
+
+Running: cl /silent 37-2.cpp
+37-2.cpp
+
+Running: cl /silent 37-3.cpp
+37-3.cpp
+
+Running: cl /silent 37-4.cpp
+37-4.cpp
+
+Running: cl /silent 38-1.cpp
+38-1.cpp
+
+Running: cl /silent 39-1.cpp
+39-1.cpp
+
+Running: cl /silent 40-1.cpp
+40-1.cpp
+
+Running: cl /silent 41-1.cpp
+41-1.cpp
+
+Running: cl /silent 42-1.cpp
+42-1.cpp
+
+Running: cl /silent 43-1.cpp
+
+43-1.cpp  ----------- MSVC native lib. only problem? --------------------
+43-1.cpp(41) : error C2664: 'mem_fun_ref' : cannot convert parameter 1 from 'int (Widget::*)(void) const' to 'int (Widget::*)(void)'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+43-1.cpp(51) : error C2664: 'mem_fun_ref_t<int,Widget> mem_fun_ref(int (Widget::*)(void))' : cannot convert parameter 1 from 'int (Widget::*)(void) const' to 'int (Widget::*)(void)'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+
+Running: cl /silent 43-2.cpp
+43-2.cpp
+
+Running: cl /silent 44-1.cpp
+44-1.cpp
+
+Running: cl /silent 45-1.cpp
+45-1.cpp
+
+Running: cl /silent 45-2.cpp
+
+45-2.cpp ------ MSVC native lib fails to declare list::sort as a member template.  
+45-2.cpp(55) : error C2664: 'void list<Person>::sort(greater<Person>)' : cannot convert parameter 1 from 'PersonNameLess' to 'greater<Person>'
+        No constructor could take the source type, or constructor overload resolution was ambiguous
+
+Running: cl /silent 46-1.cpp
+46-1.cpp ----------- MSVC limitation: can't mem_fun_ref a const member function ---
+46-1.cpp(112) : error C2664: 'mem_fun_ref' : cannot convert parameter 1 from 'unsigned int (string::*' to 'unsigned int (string::*'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+46-1.cpp(112) : error C2780: '_OI transform(_II1,_II1,_II2,_OI,_Bop)' : expects 5 arguments - 4 provided
+        e:\VC98\INCLUDE\algorithm(247) : see declaration of 'transform'
+
+Running: cl /silent 47-1.cpp
+47-1.cpp
+
+Running: cl /silent 48-1.cpp
+48-1.cpp
+
+Running: cl /silent 49-1.cpp
+49-1.cpp --------------- non-issue (wierd compiler problem, solved by commenting out preceding code) -----------
+e:\VC98\INCLUDE\xutility(19) : error C2679: binary '=' : no operator defined which takes a right-hand operand of type 'string *' (or there is no acceptable conversion)
+        49-1.cpp(41) : see reference to function template instantiation 'ostream_IT<string> copy(string **,string **,ostream_IT<string>)' being compiled
+
+Running: cl /silent 50-1.cpp
+50-1.cpp
+
+Running: cl /silent 50-2.cpp
+50-2.cpp
+
+Running: cl /silent 50-3.cpp
+
+50-3.cpp --------- on purpose --------------
+50-3.cpp(29) : error C2784: 'mem_fun_t<_R,_Ty> mem_fun(_R (_Ty::*)(void))' : could not deduce template argument for '<Unknown>' from 'int (Widget::*)(istream &)'
+
+Running: cl /silent a-1.cpp
+a-1.cpp --------- not worrying about it ---------------
+a-1.cpp(19) : error C2039: 'toupper' : is not a member of 'std'
+a-1.cpp(20) : error C2039: 'toupper' : is not a member of 'std'
+a-1.cpp(105) : error C2780: 'const _F &__cdecl use_facet(const locale &,const _F *,bool)' : expects 3 arguments - 1 provided
+        e:\VC98\INCLUDE\xlocale(157) : see declaration of 'use_facet'
+a-1.cpp(109) : error C2039: 'toupper' : is not a member of 'std'
+a-1.cpp(109) : error C2660: 'toupper' : function does not take 2 parameters
+a-1.cpp(109) : error C2039: 'toupper' : is not a member of 'std'
+a-1.cpp(109) : error C2660: 'toupper' : function does not take 2 parameters
+
+Running: cl /silent b-1.cpp
+b-1.cpp ----------- msvc member template problem ------------------
+b-1.cpp(64) : error C2664: 'void vector<Widget>::insert(Widget *,unsigned int,const Widget &)' : cannot convert parameter 2 from 'IT' to 'unsigned int'
+        No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+b-1.cpp(79) : error C2664: 'void vector<Widget>::insert(Widget *,unsigned int,const Widget &)' : cannot convert parameter 2 from 'IT' to 'unsigned int'
+        No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+b-1.cpp(87) : error C2664: 'void vector<Widget>::insert(Widget *,unsigned int,const Widget &)' : cannot convert parameter 2 from 'IT' to 'unsigned int'
+        No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+b-1.cpp(114) : error C2664: 'vector<Widget>(unsigned int,const Widget &)' : cannot convert parameter 1 from 'istream_IT<Widget>' to 'unsigned int'
+        No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+b-1.cpp(120) : error C2664: 'void list<Widget>::assign(list<Widget>::const_IT,list<Widget>::const_IT)' : cannot convert parameter 1 from 'reverse_IT<Widget *,Widget,Widget &,Widget *,int>' to 'list<Widget>::const_IT'
+        No constructor could take the source type, or constructor overload resolution was ambiguous
+b-1.cpp(127) : error C2664: 'void vector<Widget>::insert(Widget *,unsigned int,const Widget &)' : cannot convert parameter 2 from 'IT' to 'unsigned int'
+        No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+
+Running: cl /silent b-2.cpp
+b-2.cpp

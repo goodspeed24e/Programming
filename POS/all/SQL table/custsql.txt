@@ -1,0 +1,33 @@
+-- 
+-- 資料表格式： `cust`
+-- 
+
+CREATE TABLE `cust` (
+  `custno` varchar(10) NOT NULL,
+  `custname` varchar(40) NOT NULL,
+  `custsname` varchar(30) NOT NULL,
+  `custleader` varchar(10) NOT NULL,
+  `custinvoice` varchar(10) NOT NULL,
+  `custcontact` varchar(10) NOT NULL,
+  `custtel` varchar(10) NOT NULL,
+  `custmobil` varchar(10) NOT NULL,
+  `custfax` varchar(10) NOT NULL,
+  `custtype` varchar(10) NOT NULL,
+  `custsales` varchar(10) NOT NULL,
+  `custadr` varchar(60) NOT NULL,
+  `custpradr` varchar(60) NOT NULL,
+  `custinadr` varchar(60) NOT NULL,
+  `custemail` varchar(60) NOT NULL,
+  `custhttp` varchar(60) NOT NULL,
+  `custdate` date NOT NULL,
+  `custclosdate` date NOT NULL,
+  `custprictype` varchar(10) NOT NULL,
+  `custpricper` int(3) NOT NULL default '100',
+  `custprepamt` int(8) NOT NULL default '0',
+  `custsaleamt` int(8) NOT NULL default '0',
+  `custchkamt` int(8) NOT NULL default '0',
+  `custprepdc` varchar(10) NOT NULL,
+  `custsaledc` varchar(10) NOT NULL,
+  `custchkdc` varchar(10) NOT NULL,
+  PRIMARY KEY  (`custno`)
+) ENGINE=MyISAM DEFAULT CHARSET=big5;

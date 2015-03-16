@@ -1,0 +1,24 @@
+LIBRARY MYIO
+
+EXPORTS
+
+OnMyIo
+OffMyIo
+read_mem_byte
+read_mem_word
+read_mem_dword
+write_mem_byte
+write_mem_word
+write_mem_dword
+read_io_byte
+read_io_word
+read_io_dword
+write_io_byte
+write_io_word
+write_io_dword
+read_pci_byte
+read_pci_word
+read_pci_dword
+write_pci_byte
+write_pci_word
+write_pci_dword

@@ -1,0 +1,270 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Taiwan) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_TRADITIONAL
+#pragma code_page(950)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 1\r\n"
+    "#pragma code_page(950)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\WinLPT.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.cht\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\WinLPT.ico"
+IDI_OFF_ICON            ICON    DISCARDABLE     "res\\off_icon.ico"
+IDI_ON_ICON             ICON    DISCARDABLE     "res\\on_icon.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 194, 72
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "關於 WinLPT"
+FONT 10, "System"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,21,21
+    LTEXT           "WinLPT Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2007 by Intra",IDC_STATIC,38,37,119,8
+    DEFPUSHBUTTON   "確定",IDOK,72,51,50,14,WS_GROUP
+    LTEXT           "This tool is used to test LPT port",IDC_STATIC,49,25,
+                    106,8
+END
+
+IDD_WINLPT_DIALOG DIALOGEX 0, 0, 392, 307
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "WinLPT"
+FONT 9, "新細明體", 0, 0, 0x1
+BEGIN
+    CONTROL         "顯示狀態埠(測試器)",IDC_STATUS_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,17,26,85,10
+    CONTROL         "送出資料(測試器)",IDC_SEND_FT_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,17,42,77,10
+    CONTROL         "控制埠",IDC_CTRL_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,42,70,40,10
+    CONTROL         "資料埠",IDC_DATA_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,42,86,40,10
+    CONTROL         " ",IDC_DB8_RADIO,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,100,81,19,8
+    CONTROL         " ",IDC_DB7_RADIO,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,135,81,19,8
+    CONTROL         " ",IDC_DB6_RADIO,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,170,81,19,8
+    CONTROL         " ",IDC_DB5_RADIO,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,206,81,19,8
+    CONTROL         " ",IDC_DB4_RADIO,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,242,81,19,8
+    CONTROL         " ",IDC_DB3_RADIO,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,278,81,19,8
+    CONTROL         " ",IDC_DB2_RADIO,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,314,81,19,8
+    CONTROL         " ",IDC_DB1_RADIO,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,350,81,19,8
+    CONTROL         "資料傳輸(迴路器)",IDC_SEND_LB_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,17,114,77,10
+    CONTROL         "資料傳輸(2台電腦)",IDC_SEND_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,17,130,81,10
+    EDITTEXT        IDC_NAME_EDIT,131,132,61,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SEND_EDIT,81,148,296,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "執行",IDC_RUN_BUTTON,171,175,50,19
+    PUSHBUTTON      "關閉",IDC_CLOSE_BUTTON,171,286,50,14
+    PUSHBUTTON      "確定",IDOK,7,286,32,14,NOT WS_VISIBLE | NOT WS_TABSTOP
+    PUSHBUTTON      "取消",IDCANCEL,16,290,35,10,NOT WS_VISIBLE | NOT 
+                    WS_TABSTOP
+    GROUPBOX        "功能",IDC_STATIC,7,7,378,161
+    GROUPBOX        "設定",IDC_STATIC,31,57,346,46
+    EDITTEXT        IDC_LIST_EDIT,7,199,378,79,ES_MULTILINE | ES_READONLY | 
+                    WS_VSCROLL | NOT WS_TABSTOP
+    ICON            IDI_OFF_ICON,IDC_LED1_STATIC,139,25,20,20,SS_CENTERIMAGE | 
+                    SS_REALSIZEIMAGE
+    ICON            IDI_OFF_ICON,IDC_LED2_STATIC,162,25,20,20,SS_CENTERIMAGE | 
+                    SS_REALSIZEIMAGE
+    ICON            IDI_OFF_ICON,IDC_LED3_STATIC,190,25,20,20,SS_CENTERIMAGE | 
+                    SS_REALSIZEIMAGE
+    ICON            IDI_OFF_ICON,IDC_LED4_STATIC,223,25,20,20,SS_CENTERIMAGE | 
+                    SS_REALSIZEIMAGE
+    ICON            IDI_OFF_ICON,IDC_LED5_STATIC,259,25,20,20,SS_CENTERIMAGE | 
+                    SS_REALSIZEIMAGE
+    RTEXT           "啦咧輸入欄",IDC_STATIC,32,151,46,8
+    LTEXT           "名稱：",IDC_STATIC,103,134,25,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "WinLPT MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "WinLPT\0"
+            VALUE "LegalCopyright", "Copyright (C) 2007\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "WinLPT.EXE\0"
+            VALUE "ProductName", "WinLPT Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x404, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 187
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 65
+    END
+
+    IDD_WINLPT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 385
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 300
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_PIC1_BITMAP         BITMAP  DISCARDABLE     "res\\pic1.bmp"
+IDB_PIC11_BITMAP        BITMAP  DISCARDABLE     "res\\pic1_1.bmp"
+IDB_PIC2_BITMAP         BITMAP  DISCARDABLE     "res\\pic2.bmp"
+IDB_PIC21_BITMAP        BITMAP  DISCARDABLE     "res\\pic2_1.bmp"
+IDB_PIC3_BITMAP         BITMAP  DISCARDABLE     "res\\pic3.bmp"
+IDB_PIC31_BITMAP        BITMAP  DISCARDABLE     "res\\pic3_1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "關於 WinLPT(&A)..."
+END
+
+#endif    // Chinese (Taiwan) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+#ifdef _WIN32
+LANGUAGE 4, 1
+#pragma code_page(950)
+#endif //_WIN32
+#include "res\WinLPT.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.cht\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

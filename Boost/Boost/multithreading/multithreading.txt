@@ -1,0 +1,27 @@
+Threads are discrete processing sequences that allow execution of different 
+functions within a given application at the same time. This becomes important 
+if a function, known to take a long time for a specific calculation, should 
+not block a different function while executing. Threads actually allow the 
+simultaneous execution of two functions without having one waiting for the 
+other.
+
+Once an application is launched, it contains only one thread by default. 
+This thread executes the main() function. Functions called from within 
+main() are executed sequentially in the context of this thread. Such a 
+program is called a single threaded application.
+
+In contrast, programs that create new threads are called multithreaded 
+applications. Not only can they execute multiple functions at the same 
+time, they also become more and more important these days since computers 
+now ship with CPUs containing more than one core by default. 
+Since multiple cores allow the execution of different functions simultaneously,
+they put a burden on the developer to use the available processing capacity 
+accordingly. While threads have always been used whenever different 
+functions should execute concurrently, developers now are more and more 
+forced to carefully structure their applications to support this concurrency. 
+Knowledge of multithreaded programming thus becomes more and more important 
+in the age of multi-core systems.
+
+This chapter introduces the Boost C++ Library Boost.Thread that allows the 
+development of platform independent multithreaded applications.
+

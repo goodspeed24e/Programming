@@ -1,0 +1,10 @@
+-- 
+-- 資料表格式： `cuty`
+-- 
+
+CREATE TABLE `cuty` (
+  `cutyno` varchar(10) NOT NULL,
+  `cutyname` varchar(40) NOT NULL,
+  PRIMARY KEY  (`cutyno`)
+) ENGINE=MyISAM DEFAULT CHARSET=big5;
+

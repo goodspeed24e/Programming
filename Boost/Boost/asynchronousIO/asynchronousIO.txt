@@ -1,0 +1,24 @@
+
+This chapter introduces the Boost C++ Library Asio which centers on 
+asynchronous input and output. The name says it all: Asio stands for 
+asynchronous input/output. This library allows C++ to process data 
+asynchronously as well as platform independent. Asynchronous data 
+processing means that tasks are triggered without waiting for their 
+completion. Instead, Boost.Asio triggers an application once a task has 
+completed. The main advantage of asynchronous tasks is the possibility to 
+perform other tasks without blocking the application while waiting for 
+their completion.
+
+Typical examples for asynchronous tasks are network applications. If data is 
+sent over e.g. the Internet, it is generally important to know whether or 
+not it has been sent successfully. Without a library such as Boost.Asio, 
+the return value of a function would be evaluated. This, however, would 
+require to wait until all data has been sent and either an acknowledge or 
+an error code is available. Using Boost.Asio, the process is split into two 
+individual steps: The first step starts the data transmission as an 
+asynchronous task. Once the transmission has finished either successful or 
+with an error, the application is notified about the result in a second 
+step accordingly. The crucial difference is that the application does not 
+need to block until the transmission has finished but can execute other 
+operations in the meantime.
+

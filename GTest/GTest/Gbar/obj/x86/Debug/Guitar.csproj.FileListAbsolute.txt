@@ -1,0 +1,11 @@
+D:\_MyProjects\GTest\Gbar\bin\Debug\Guitar.exe.config
+D:\_MyProjects\GTest\Gbar\bin\Debug\App.config
+D:\_MyProjects\GTest\Gbar\bin\Debug\Guitar.exe
+D:\_MyProjects\GTest\Gbar\bin\Debug\Guitar.pdb
+D:\_MyProjects\GTest\Gbar\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\_MyProjects\GTest\Gbar\obj\x86\Debug\Guitar.GuitarForm.resources
+D:\_MyProjects\GTest\Gbar\obj\x86\Debug\Guitar.Properties.Resources.resources
+D:\_MyProjects\GTest\Gbar\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+D:\_MyProjects\GTest\Gbar\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+D:\_MyProjects\GTest\Gbar\obj\x86\Debug\Guitar.exe
+D:\_MyProjects\GTest\Gbar\obj\x86\Debug\Guitar.pdb

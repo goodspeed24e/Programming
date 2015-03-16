@@ -1,0 +1,8 @@
+/*
+The library Boost.DateTime can be used to process time data 
+such as calendar dates and times. In addition, Boost.DateTime 
+provides extensions to account for time zones as well as 
+supporting formatted input and output of calendar dates and 
+times. This chapter covers the individual pieces of 
+Boost.DateTime.
+*/

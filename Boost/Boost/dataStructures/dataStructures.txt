@@ -1,0 +1,13 @@
+For many Boost C++ Libraries, the definition of a container does not apply 
+and thus have not been presented in Chapter 13, Containers. They rather 
+define other data structures introduced in this chapter. For example, 
+boost::tuple extends the C++ data type std::pair to allow storing not only 
+two but rather an arbitrary number of values.
+
+Besides boost::tuple, this chapter covers the classes boost::any and 
+boost::variant allowing to store values of different data types. 
+Variables of type boost::any behave just like variables of typeless 
+programming languages which can store any information. Variables of type 
+boost::variant on the other hand store information of predetermined data 
+types and thus are similar to a union.
+

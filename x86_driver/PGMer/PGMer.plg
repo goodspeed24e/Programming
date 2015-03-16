@@ -1,0 +1,45 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: PGMer - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x404 /fo"Release/PGMer.res" /d "NDEBUG" "D:\Mydata\talk\book\chap9\tools\PGMer\PGMer.rc"" 
+Creating temporary file "C:\DOCUME~1\Intra\LOCALS~1\Temp\RSP9F.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\Mydata\talk\book\chap9\tools\PGMer\iic.cpp"
+"D:\Mydata\talk\book\chap9\tools\PGMer\p93.cpp"
+"D:\Mydata\talk\book\chap9\tools\PGMer\PGMer.cpp"
+"D:\Mydata\talk\book\chap9\tools\PGMer\PGMerDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Intra\LOCALS~1\Temp\RSP9F.tmp" 
+Creating temporary file "C:\DOCUME~1\Intra\LOCALS~1\Temp\RSPA0.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/PGMer.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\Mydata\talk\book\chap9\tools\PGMer\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Intra\LOCALS~1\Temp\RSPA0.tmp" 
+Creating command line "link.exe myio.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/PGMer.pdb" /machine:I386 /out:"Release/PGMer.exe"  .\Release\iic.obj .\Release\p93.obj .\Release\PGMer.obj .\Release\PGMerDlg.obj .\Release\StdAfx.obj .\Release\PGMer.res "
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+iic.cpp
+p93.cpp
+PGMer.cpp
+PGMerDlg.cpp
+Generating Code...
+Linking...
+LINK : warning LNK4089: all references to "SHELL32.dll" discarded by /OPT:REF
+
+
+
+<h3>Results</h3>
+PGMer.exe - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

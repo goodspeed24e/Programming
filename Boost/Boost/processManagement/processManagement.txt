@@ -1,0 +1,113 @@
+
+-- Introduction --
+
+The initial version of Boost.Process which is now known as version 0.1 was 
+created by Julio M. Merino Vidal in 2006. It was created during the Google 
+Summer of Code program - an initiative by Google to support and sponsor the 
+development of open source libraries. Julio continued to work on 
+Boost.Process afterwards but lost interest shortly before a new version was 
+ready to be released. The snapshot of Boost.Process which he stopped working 
+on in 2007 is known as version 0.2.
+
+In 2008 several developers picked up Boost.Process and continued where Julio 
+had left. As those efforts to improve the library were not organized there 
+were several snapshots of Boost.Process floating around. End of 2008 I 
+merged all the snapshots I was aware of, updated all test cases and made 
+sure that the merged version of Boost.Process worked on all major platforms.
+
+The code was also checked into the sandbox which is the Boost repository for 
+libraries under construction. This version is known as 0.3.
+
+The latest version of Boost.Process is 0.31. It was released on 21 April 
+2009 together with this article. It fixes a few bugs and can also be found 
+in the sandbox.
+
+This article talks about the concepts and the architecture of Boost.Process.
+It explains how the library can be used and which POSIX and Windows features 
+are currently supported. As Boost.Process is not yet finished it is also a 
+request for comments to figure out what is missing before the library can 
+be reviewed and eventually become an official Boost C++ library. Other 
+developers are invited and encouraged to share their opinions and provide 
+feedback!
+
+The latest version of Boost.Process is available as a ZIP file. You'll find 
+two directories in the ZIP file: boost contains header files, lib contains 
+the documentation, samples and test cases. As Boost.Process is a 
+header-only library you only need to copy the directory boost to whereever 
+you keep your Boost C++ libraries. There is no need to build a library.
+
+The documentation of Boost.Process can also be found online. Just like the 
+C++ code it is not complete and needs to be overhauled. But then again you 
+are currently reading an introduction into Boost.Process anyway and don't 
+need the documentation. As the documentation contains a reference it might 
+be useful later to lookup details though.
+
+All classes and functions defined by Boost.Process belong to the namespace 
+boost::process. While the classes and functions are defined in many 
+different header files there is one header file which includes all the 
+others. It is boost/process.hpp. I recommend to include this header file 
+in your projects - that's what all samples in this article do, too.
+
+-- Concepts --
+
+Creating a platform-independent C++ library for process management turns out
+to be rather difficult even before any code is written. The problem is that 
+operating systems don't use necessarily the same concepts when it comes to 
+process management. While all operating systems support processes POSIX 
+systems for example know something called process groups and sessions. 
+Windows again has concepts like window stations and desktops. Concentrating 
+only on concepts which are supported by all platforms could be an option but 
+isn't a good one. Boost.Process would support such a limited set of 
+concepts that developers would probably turn rather quickly to other 
+libraries which support the platform-specific features they are interested 
+in.
+
+Boost.Process' solution is to provide generic and platform-specific classes.
+Developers who want to restrict themselves to use only features supported 
+by all platforms work with generic classes. Developers who want to benefit 
+from certain features provided by their operating system work with 
+platform-specific classes.
+
+A good example is the class boost::process::process which not surprisingly 
+represents a process. It is a generic class which provides a method get_id(). 
+This method returns an identifier for a process. As process identifiers are 
+supported on all operating systems get_id() has been added to the generic 
+class boost::process::process.
+
+If a process spawns child processes they are represented by the generic 
+class boost::process::child. This class is inherited from boost::process::process 
+as child processes are after all processes, too. While child processes can 
+have a standard input, standard output and standard error stream on all 
+platforms they can have arbitrary many streams on POSIX systems. That's why 
+Boost.Process provides another class boost::process::posix_child which is 
+derived from boost::process::child. On Windows again child processes have a 
+few more identifiers, e.g. a primary thread handle. Developers who want to 
+access those identifiers can use the class boost::process::win32_child on 
+Windows.
+
+After having been introduced to boost::process::process, 
+boost::process::child, boost::process::posix_child and boost::process::win32_child 
+you know already two very important concepts of Boost.Process. Another 
+important concept is implemented by the generic class boost::process::context 
+and the platform-specific classes boost::process::posix_context and 
+boost::process::win32_context.
+
+A context is a description of the environment of a process. It can affect 
+both the startup procedure of a process and its runtime behavior. This 
+description for example includes the working directory and environment 
+variables. It also specifies how the standard input, standard output and 
+standard error streams should be treated when a process is started, e.g. if 
+they should be closed, inherited or redirected.
+
+Boost.Process defines a few more concepts where it's questionable though if 
+their definitions make sense. There is for example a concept for the 
+executable name. As the executable name is a string it's not sure if there 
+is any benefit if a concept is defined for the executable name. The 
+original idea was to allow developers to use different string types. The 
+current version of Boost.Process requires though to pass the executable 
+name as a std::string. Neither std::wstring nor other string types like 
+CString from the Microsoft Foundation Classes will work. As other 
+Boost C++ libraries like Boost.Interprocess stick to one and only one 
+string type - typically std::string - Boost.Process should probably do 
+the same.
+

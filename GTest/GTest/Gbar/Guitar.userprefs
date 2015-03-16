@@ -1,0 +1,38 @@
+﻿<Properties>
+  <AuthorInfo Name="Omri Spector" Email="omri.spector@gmail.com" Copyright="Omri Spector" ctype="AuthorInformation" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" ctype="Workspace" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="GuitarForm.cs" ctype="Workbench">
+    <Files>
+      <File FileName="GuitarForm.cs" Line="148" Column="31" />
+      <File FileName="GoogleTestOutputParser.cs" Line="9" Column="48" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="Guitar" expanded="True">
+            <Node name="GuitarForm.cs" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Guitar ctype="Properties">
+    <MonoDevelop.Ide.CustomExecutionModes ctype="CustomExecutionModes">
+      <Data Name="Debug" Id="68fb6f59-76d3-4543-bc93-07b579c7f733" ModeId="Default">
+        <CommandData>
+          <Item Key="MonoDevelop.Ide.Execution.CustomArgsCustomizer">
+            <Value ctype="CustomArgsExecutionModeData">
+              <EnvironmentVariables />
+            </Value>
+          </Item>
+          <Item Key="MonoDevelop.Ide.Execution.MonoExecutionCustomizer">
+            <Value DebugMode="True" DebugMdbOptimizations="True" ctype="MonoExecutionParameters" />
+          </Item>
+        </CommandData>
+      </Data>
+    </MonoDevelop.Ide.CustomExecutionModes>
+  </MonoDevelop.Ide.ItemProperties.Guitar>
+</Properties>

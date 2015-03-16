@@ -1,0 +1,15 @@
+
+BL51 BANKED LINKER/LOCATER V6.05 - SN: K1PBC-I81CK5
+COPYRIGHT KEIL ELEKTRONIK GmbH 1987 - 2007
+"D:\Mydata\talk\book\chap8\tools\TalkUSB\Spell\F3xx_Talk_Control_F340.OBJ",
+"D:\Mydata\talk\book\chap8\tools\TalkUSB\Spell\F3xx_USB0_Descriptor.OBJ",
+"D:\Mydata\talk\book\chap8\tools\TalkUSB\Spell\F3xx_USB0_InterruptServiceRoutine.OBJ",
+"D:\Mydata\talk\book\chap8\tools\TalkUSB\Spell\F3xx_USB0_Main.OBJ",
+"D:\Mydata\talk\book\chap8\tools\TalkUSB\Spell\F3xx_USB0_ReportHandler.OBJ",
+"D:\Mydata\talk\book\chap8\tools\TalkUSB\Spell\F3xx_USB0_Standard_Requests.OBJ"  TO "D:\Mydata\talk\book\chap8\tools\TalkUSB\Spell\Spell" RS(256) PL(68) PW(78) 
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_SENDPACKET?F3XX_USB0_INTERRUPTSERVICEROUTINE
+
+Program Size: data=69.1 xdata=13 code=3426
+LINK/LOCATE RUN COMPLETE.  1 WARNING(S),  0 ERROR(S)

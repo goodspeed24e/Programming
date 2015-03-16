@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Practice_DesignPattern", "Practice_DesignPattern\Practice_DesignPattern.vcxproj", "{CA5A3A8C-DF5E-4C61-A033-B926785F191E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{926DEEF0-B72A-4584-9398-A21CA7E48DE9}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		Practice_DesignPattern.vsmdi = Practice_DesignPattern.vsmdi
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GTest", "GTest\GTest.vcxproj", "{E0D3B77C-BA9D-47DB-9240-07BC5BDDF6EE}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Practice_DesignPattern.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA5A3A8C-DF5E-4C61-A033-B926785F191E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CA5A3A8C-DF5E-4C61-A033-B926785F191E}.Debug|Win32.Build.0 = Debug|Win32
+		{CA5A3A8C-DF5E-4C61-A033-B926785F191E}.Release|Win32.ActiveCfg = Release|Win32
+		{CA5A3A8C-DF5E-4C61-A033-B926785F191E}.Release|Win32.Build.0 = Release|Win32
+		{E0D3B77C-BA9D-47DB-9240-07BC5BDDF6EE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E0D3B77C-BA9D-47DB-9240-07BC5BDDF6EE}.Debug|Win32.Build.0 = Debug|Win32
+		{E0D3B77C-BA9D-47DB-9240-07BC5BDDF6EE}.Release|Win32.ActiveCfg = Release|Win32
+		{E0D3B77C-BA9D-47DB-9240-07BC5BDDF6EE}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

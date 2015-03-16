@@ -1,0 +1,48 @@
+#
+# HelloWorld.inf
+#
+# Component description file
+#
+
+[defines]
+ BASE_NAME		= HelloWorld
+ FILE_GUID		= 0B2E45BA-3539-4a2a-B853-3723E3CAAB1B
+ COMPONENT_TYPE	= APPLICATION
+
+[sources.common]
+..\ShCommonStrings.uni
+ HelloWorldStrings.uni
+ HelloWorld.c
+ HelloWorld.h
+
+[includes.common]
+  .
+  ..\Inc
+  ..\Library
+  $(EDK_SOURCE)\Foundation
+  $(EDK_SOURCE)\Foundation\Include
+  $(EDK_SOURCE)\Foundation\Include\IndustryStandard
+  $(EDK_SOURCE)\Foundation\Efi
+  $(EDK_SOURCE)\Foundation\Efi\Include
+  $(EDK_SOURCE)\Foundation\FrameWork
+  $(EDK_SOURCE)\Foundation\FrameWork\Include
+  $(EDK_SOURCE)\Foundation\Core\Dxe
+  $(DEST_DIR)\
+
+[libraries.common]  
+  EfiShellLib
+  EdkProtocolLib
+  EdkFrameworkProtocolLib
+  EfiProtocolLib
+  ArchProtocolLib
+  EdkGuidLib
+  EdkFrameworkGuidLib
+  EfiGuidLib
+
+[nmake.common]
+C_STD_INCLUDE =
+IMAGE_ENTRY_POINT = HelloMain
+C_STD_FLAGS=$(C_STD_FLAGS) /DSTRING_ARRAY_NAME=$(BASE_NAME)Strings
+C_STD_FLAGS=$(C_STD_FLAGS) /DSTRING_DEFINES_FILE=\"$(BASE_NAME)StrDefs.h\"
+C_STD_FLAGS=$(C_STD_FLAGS) /DEFI_BOOTSHELL
+

@@ -1,0 +1,23 @@
+-- 
+-- 資料表格式： `product`
+-- 
+
+CREATE TABLE `product` (
+  `prodno` varchar(10) NOT NULL,
+  `prodname` varchar(40) NOT NULL,
+  `prodtype` varchar(10) NOT NULL,
+  `prodvend` varchar(10) NOT NULL,
+  `produnit` varchar(10) NOT NULL,
+  `prodipric` int(6) NOT NULL,
+  `prodspric` int(6) NOT NULL,
+  `prodsave` int(6) NOT NULL,
+  `prodpqty` int(6) NOT NULL,
+  `prodnqty` int(6) NOT NULL,
+  `prodgrap` varchar(60) NOT NULL,
+  `prodsdesp` varchar(60) NOT NULL,
+  `proddesp` varchar(200) NOT NULL,
+  `prodidate` date NOT NULL,
+  `prododate` date NOT NULL,
+  PRIMARY KEY  (`prodno`),
+  KEY `prodtype` (`prodtype`,`prodvend`)
+) ENGINE=MyISAM DEFAULT CHARSET=big5;

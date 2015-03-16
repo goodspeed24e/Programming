@@ -1,0 +1,13 @@
+The first version of the C++ standard adapted in 1998 only provides one smart pointer: std::auto_ptr. In principle, 
+it behaves like a regular pointer: It provides access to a dynamically allocated object by storing its address.
+ However, std::auto_ptr is considered intelligent and smart since it automatically releases the contained 
+object during destruction by calling the delete operator. This certainly requires that it is provided with 
+the address of the object - returned by the new operator - at initialization. Since the delete operator is 
+called within the destructor of std::auto_ptr, the associated memory for the contained object is guaranteed to be 
+released. This is one advantage of smart pointers.
+
+This becomes even more important in conjunction with exceptions: Without smart pointers such as std::auto_ptr, 
+every function allocating dynamic memory would be required to catch every possible exception in order to release
+the memory prior to passing on the exception to its calling function. The Boost C++ Library Smart Pointers 
+provides many additional smart pointers that can be used in all kind of situations.
+

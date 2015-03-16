@@ -1,0 +1,35 @@
+-- 
+-- 資料表格式： `vend`
+-- 
+
+CREATE TABLE `vend` (
+  `vendno` varchar(10) NOT NULL,
+  `vendname` varchar(40) NOT NULL,
+  `vendsname` varchar(30) default NULL,
+  `vendleader` varchar(10) default NULL,
+  `vendinvoice` varchar(10) default NULL,
+  `vendcontact` varchar(10) default NULL,
+  `vendtel` varchar(10) default NULL,
+  `vendmobil` varchar(10) default NULL,
+  `vendfax` varchar(10) default NULL,
+  `vendtype` varchar(10) default NULL,
+  `vendsales` varchar(10) default NULL,
+  `vendadr` varchar(60) default NULL,
+  `vendpradr` varchar(60) default NULL,
+  `vendinadr` varchar(60) default NULL,
+  `vendemail` varchar(60) default NULL,
+  `vendhttp` varchar(60) default NULL,
+  `venddate` date default NULL,
+  `vendclosdate` date default NULL,
+  `vendprictype` varchar(10) default NULL,
+  `vendpricper` int(3) default '100',
+  `vendprepamt` int(6) default NULL,
+  `vendchkamt` int(6) default NULL,
+  `vendapamt` int(6) default NULL,
+  `vendprepdc` varchar(10) default NULL,
+  `vendapdc` varchar(10) default NULL,
+  `vendchkdc` varchar(10) default NULL,
+  PRIMARY KEY  (`vendno`),
+  KEY `vendsales` (`vendsales`)
+) ENGINE=MyISAM DEFAULT CHARSET=big5;
+

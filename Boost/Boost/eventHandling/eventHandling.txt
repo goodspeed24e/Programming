@@ -1,0 +1,17 @@
+Many developers think about graphical user interfaces when hearing the 
+term 'event handling': At the click of a button, the associated function 
+is executed. The click itself is the event while the function is the 
+corresponding event handler.
+
+The usage of this pattern is certainly not limited to graphical user 
+interfaces though. In general, arbitrary objects can call dedicated 
+functions based on specific events. The Boost.Signals library introduced 
+in this chapter provides an easy way to apply this pattern in C++.
+
+Strictly speaking, the Boost.Function library could also be used for 
+event handling. One crucial difference between Boost.Function and 
+Boost.Signals, however, is the ability of Boost.Signals to associate more 
+than one event handler with a single event. Therefore, Boost.Signals 
+supports event-driven development much better and should be the first c
+hoice whenever events must be handled.
+

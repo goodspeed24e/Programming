@@ -1,0 +1,8 @@
+2012/09/16-13:01:42.308 cfc Recovering log #26
+2012/09/16-13:01:42.308 cfc Level-0 table #30: started
+2012/09/16-13:01:42.324 cfc Level-0 table #30: 32663 bytes OK
+2012/09/16-13:01:42.324 cfc Delete type=0 #26
+2012/09/16-13:01:42.324 cfc Delete type=3 #1
+2012/09/16-13:01:42.324 cfc Delete type=3 #2
+2012/09/16-13:01:42.324 5a4 Compacting 14@0 + 0@1 files
+2012/09/16-13:01:42.340 5a4 compacted to: files[ 14 0 0 0 0 0 0 ]

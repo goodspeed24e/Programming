@@ -1,0 +1,480 @@
+Compiled with CC = call dostl /silent
+INCLUDE = e:\STLport-4.1b6\stlport;e:\VC98\ATL\INCLUDE;e:\VC98\INCLUDE;e:\VC98\MFC\INCLUDE;
+
+Running: cl /silent 0.cpp
+0.cpp
+
+Running: cl /silent 2-1.cpp
+2-1.cpp
+
+Running: cl /silent 2-2.cpp
+2-2.cpp
+
+Running: cl /silent 2-3.cpp
+2-3.cpp
+
+Running: cl /silent 2-4.cpp
+2-4.cpp
+
+Running: cl /silent 2-5.cpp
+2-5.cpp
+
+Running: cl /silent 3-1.cpp
+3-1.cpp
+
+Running: cl /silent 4-1.cpp
+4-1.cpp
+
+Running: cl /silent 5-1.cpp
+5-1.cpp
+
+Running: cl /silent 5-2.cpp
+5-2.cpp
+
+Running: cl /silent 6-1.cpp				**** Now works! *****
+6-1.cpp
+
+Running: cl /silent 7-1.cpp
+7-1.cpp
+
+Running: cl /silent 7-2.cpp
+7-2.cpp
+
+Running: cl /silent 7-3.cpp
+7-3.cpp			-- VC Bug --
+7-3.cpp(26) : error C2665: 'delete' : none of the 2 overloads can convert parameter 1 from type 'const Widget *'
+        7-3.cpp(26) : while compiling class-template member function 'void DeleteObject<Widget>::operator ()(const Widget *) const'
+
+Running: cl /silent 7-4.cpp
+7-4.cpp
+
+Running: cl /silent 7-5.cpp
+7-5.cpp
+
+Running: cl /silent 7-6.cpp
+7-6.cpp --- OK -----
+7-6.cpp(10) : fatal error C1083: Cannot open include file: 'boost/smart_ptr.hpp': No such file or directory
+
+Running: cl /silent 8-1.cpp
+8-1.cpp
+
+Running: cl /silent 8-2.cpp
+8-2.cpp
+
+Running: cl /silent 9-1.cpp
+9-1.cpp
+
+Running: cl /silent 9-2.cpp
+9-2.cpp
+
+Running: cl /silent 9-3.cpp
+9-3.cpp
+
+Running: cl /silent 9-4.cpp
+9-4.cpp
+
+Running: cl /silent 10-1.cpp
+10-1.cpp						******** New Error *************
+SpecialAllocator.h(127) : error C2146: syntax error : missing ';' before identifier '__stl_alloc_rebind'
+SpecialAllocator.h(127) : error C2433: '__STL_CALL' : 'inline' not permitted on data declarations
+SpecialAllocator.h(127) : error C2530: '__STL_CALL' : references must be initialized
+SpecialAllocator.h(127) : error C2059: syntax error : ';'
+SpecialAllocator.h(127) : error C2065: '_Tp1' : undeclared identifier
+SpecialAllocator.h(127) : error C2143: syntax error : missing ',' before '*'
+SpecialAllocator.h(127) : error C2059: syntax error : '*'
+SpecialAllocator.h(130) : error C2954: template definitions cannot nest
+SpecialAllocator.h(132) : error C2146: syntax error : missing ';' before identifier '__stl_alloc_create'
+SpecialAllocator.h(132) : error C2433: '__STL_CALL' : 'inline' not permitted on data declarations
+SpecialAllocator.h(132) : error C2040: '__STL_CALL' : 'MyLib::SpecialAllocator<`template-parameter258'>' differs in levels of indirection from 'MyLib::SpecialAllocator<`template-parameter258'> &'
+SpecialAllocator.h(132) : error C2133: '__STL_CALL' : unknown size
+SpecialAllocator.h(132) : error C2059: syntax error : ';'
+SpecialAllocator.h(132) : error C2143: syntax error : missing ',' before '*'
+SpecialAllocator.h(132) : error C2059: syntax error : '*'
+e:\STLport-4.1b6\stlport\stl/_tree.h(109) : error C2954: template definitions cannot nest
+e:\STLport-4.1b6\stlport\stl/_tree.h(111) : error C2504: '_Rb_tree_node_base' : base undefined
+e:\STLport-4.1b6\stlport\stl/_tree.h(142) : error C2039: '_Base_ptr' : is not a member of '_Rb_tree_node_base'
+        e:\STLport-4.1b6\stlport\stl/_tree.h(107) : see declaration of '_Rb_tree_node_base'
+e:\STLport-4.1b6\stlport\stl/_tree.h(142) : error C2146: syntax error : missing ';' before identifier '_Base_ptr'
+e:\STLport-4.1b6\stlport\stl/_tree.h(142) : error C2868: '_Base_ptr' : illegal syntax for using-declaration; expected qualified-name
+e:\STLport-4.1b6\stlport\stl/_tree.h(147) : error C2059: syntax error : 'return'
+e:\STLport-4.1b6\stlport\stl/_tree.h(147) : error C2238: unexpected token(s) preceding ';'
+e:\STLport-4.1b6\stlport\stl/_tree.h(149) : error C2143: syntax error : missing ';' before '!='
+e:\STLport-4.1b6\stlport\stl/_tree.h(149) : fatal error C1004: unexpected end of file found
+
+Running: cl /silent 11-1.cpp
+11-1.cpp				**** new error *****
+SharedMemoryAllocator.h(122) : error C2146: syntax error : missing ';' before identifier '__stl_alloc_rebind'
+SharedMemoryAllocator.h(122) : error C2433: '__STL_CALL' : 'inline' not permitted on data declarations
+SharedMemoryAllocator.h(122) : error C2530: '__STL_CALL' : references must be initialized
+SharedMemoryAllocator.h(122) : error C2059: syntax error : ';'
+SharedMemoryAllocator.h(122) : error C2065: '_Tp1' : undeclared identifier
+SharedMemoryAllocator.h(122) : error C2143: syntax error : missing ',' before '*'
+SharedMemoryAllocator.h(122) : error C2059: syntax error : '*'
+SharedMemoryAllocator.h(125) : error C2954: template definitions cannot nest
+SharedMemoryAllocator.h(127) : error C2146: syntax error : missing ';' before identifier '__stl_alloc_create'
+SharedMemoryAllocator.h(127) : error C2433: '__STL_CALL' : 'inline' not permitted on data declarations
+SharedMemoryAllocator.h(127) : error C2040: '__STL_CALL' : 'MyLib::SharedMemoryAllocator<`template-parameter258'>' differs in levels of indirection from 'MyLib::SharedMemoryAllocator<`template-parameter258'> &'
+SharedMemoryAllocator.h(127) : error C2133: '__STL_CALL' : unknown size
+SharedMemoryAllocator.h(127) : error C2059: syntax error : ';'
+SharedMemoryAllocator.h(127) : error C2143: syntax error : missing ',' before '*'
+SharedMemoryAllocator.h(127) : error C2059: syntax error : '*'
+SpecificHeapAllocator.h(12) : error C2954: template definitions cannot nest
+SpecificHeapAllocator.h(36) : error C2059: syntax error : 'return'
+SpecificHeapAllocator.h(36) : error C2238: unexpected token(s) preceding ';'
+SpecificHeapAllocator.h(38) : error C2146: syntax error : missing ';' before identifier 'const_pointer'
+SpecificHeapAllocator.h(120) : error C2146: syntax error : missing ';' before identifier '__stl_alloc_rebind'
+SpecificHeapAllocator.h(120) : error C2433: '__STL_CALL' : 'inline' not permitted on data declarations
+SpecificHeapAllocator.h(120) : error C2086: '__STL_CALL' : redefinition
+SpecificHeapAllocator.h(120) : error C2530: '__STL_CALL' : references must be initialized
+SpecificHeapAllocator.h(120) : error C2059: syntax error : ';'
+SpecificHeapAllocator.h(120) : error C2065: 'Heap' : undeclared identifier
+SpecificHeapAllocator.h(120) : error C2143: syntax error : missing ',' before '*'
+SpecificHeapAllocator.h(120) : error C2059: syntax error : '*'
+SpecificHeapAllocator.h(123) : error C2954: template definitions cannot nest
+SpecificHeapAllocator.h(125) : error C2146: syntax error : missing ';' before identifier '__stl_alloc_create'
+SpecificHeapAllocator.h(125) : error C2433: '__STL_CALL' : 'inline' not permitted on data declarations
+SpecificHeapAllocator.h(125) : error C2040: '__STL_CALL' : 'MyLib::SpecificHeapAllocator<Heap,`template-parameter259'>' differs in levels of indirection from 'MyLib::SharedMemoryAllocator<`template-parameter258'> &'
+SpecificHeapAllocator.h(125) : error C2133: '__STL_CALL' : unknown size
+SpecificHeapAllocator.h(125) : error C2059: syntax error : ';'
+SpecificHeapAllocator.h(125) : error C2143: syntax error : missing ',' before '*'
+SpecificHeapAllocator.h(125) : error C2059: syntax error : '*'
+11-1.cpp(61) : error C2065: 'SharedDoubleVec' : undeclared identifier
+11-1.cpp(61) : error C2146: syntax error : missing ';' before identifier 'v'
+11-1.cpp(61) : error C2065: 'v' : undeclared identifier
+11-1.cpp(72) : error C2065: 'pv' : undeclared identifier
+11-1.cpp(73) : error C2061: syntax error : identifier 'SharedDoubleVec'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : error C2143: syntax error : missing ';' before '}'
+11-1.cpp(99) : fatal error C1003: error count exceeds 100; stopping compilation
+
+Running: cl /silent 12-1.cpp
+12-1.cpp
+
+Running: cl /silent 12-2.cpp
+12-2.cpp
+
+Running: cl /silent 14-1.cpp
+14-1.cpp
+
+Running: cl /silent 16-1.cpp
+16-1.cpp
+
+Running: cl /silent 16-2.cpp
+16-2.cpp			**** new error *****
+16-2.cpp(83) : error C2667: 'deque<double>' : none of 2 overload have a best conversion
+16-2.cpp(83) : error C2668: 'deque<double>' : ambiguous call to overloaded function
+
+Running: cl /silent 16-3.cpp
+16-3.cpp
+
+Running: cl /silent 17-1.cpp
+17-1.cpp
+
+Running: cl /silent 18-1.cpp
+18-1.cpp ------- on purpose ---------
+18-1.cpp(25) : error C2440: 'initializing' : cannot convert from '_Bit_reference *' to 'bool *'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+
+Running: cl /silent 19-1.cpp
+19-1.cpp
+
+Running: cl /silent 20-1.cpp
+20-1.cpp
+
+Running: cl /silent 20-2.cpp
+20-2.cpp
+
+Running: cl /silent 21-1.cpp
+21-1.cpp
+
+Running: cl /silent 21-2.cpp
+21-2.cpp
+
+Running: cl /silent 21-3.cpp
+21-3.cpp
+
+Running: cl /silent 21-4.cpp
+21-4.cpp
+
+Running: cl /silent 22-1.cpp
+22-1.cpp  ------ On purpose -------------
+22-1.cpp(22) : error C2166: l-value specifies const object
+22-1.cpp(30) : error C2166: l-value specifies const object
+
+Running: cl /silent 22-2.cpp
+22-2.cpp
+
+Running: cl /silent 23-1.cpp
+23-1.cpp
+
+Running: cl /silent 23-2.cpp
+23-2.cpp
+
+Running: cl /silent 24-1.cpp
+24-1.cpp
+
+Running: cl /silent 25-1.cpp
+25-1.cpp	**** new error ********
+e:\STLport-4.1b6\stlport\stl/_hash_set.h(313) : error C2629: unexpected 'hash_multiset<_Value,_HashFcn,_EqualKey,_Alloc> ('
+e:\STLport-4.1b6\stlport\stl/_hash_set.h(313) : error C2334: unexpected token(s) preceding ':'; skipping apparent function body
+
+Running: cl /silent 26-1.cpp
+26-1.cpp
+
+Running: cl /silent 27-1.cpp
+27-1.cpp
+
+Running: cl /silent 28-1.cpp
+28-1.cpp
+
+Running: cl /silent 29-1.cpp
+29-1.cpp   ---- vc++ member template issue ---------
+e:\STLport-4.1b6\stlport\stl/_string.h(410) : error C2784: 'input_iter_tag iter_category(const istream_iter<_Tp,_CharT,_Traits,_Dist> &)' : could not deduce template argument for 'const istream_iter<_Tp,_CharT,_Traits,_Dist> &' from 'istreambuf_iter<char,char_traits<char>>'
+        e:\STLport-4.1b6\stlport\stl/_string.h(422) : see reference to function template instantiation 'void string::_M_range_initialize(istreambuf_iter<char,char_traits<char>>,istreambuf_iter<char,char_traits<char>>)' being compiled
+e:\STLport-4.1b6\stlport\stl/_string.h(410) : error C2784: 'input_iter_tag iter_category(const istream_iter<_Tp,_CharT,_Traits,_Dist> &)' : could not deduce template argument for 'const istream_iter<_Tp,_CharT,_Traits,_Dist> &' from 'istreambuf_iter<char,char_traits<char>>'
+        e:\STLport-4.1b6\stlport\stl/_string.h(422) : see reference to function template instantiation 'void string::_M_range_initialize(istreambuf_iter<char,char_traits<char>>,istreambuf_iter<char,char_traits<char>>)' being compiled
+e:\STLport-4.1b6\stlport\stl/_string.h(410) : error C2784: 'output_iter_tag iter_category(const ostream_iter<_TpP,_CharT,_Traits> &)' : could not deduce template argument for 'const ostream_iter<_TpP,_CharT,_Traits> &' from 'istreambuf_iter<char,char_traits<char>>'
+        e:\STLport-4.1b6\stlport\stl/_string.h(422) : see reference to function template instantiation 'void string::_M_range_initialize(istreambuf_iter<char,char_traits<char>>,istreambuf_iter<char,char_traits<char>>)' being compiled
+e:\STLport-4.1b6\stlport\stl/_string.h(410) : error C2784: 'output_iter_tag iter_category(const ostream_iter<_TpP,_CharT,_Traits> &)' : could not deduce template argument for 'const ostream_iter<_TpP,_CharT,_Traits> &' from 'istreambuf_iter<char,char_traits<char>>'
+        e:\STLport-4.1b6\stlport\stl/_string.h(422) : see reference to function template instantiation 'void string::_M_range_initialize(istreambuf_iter<char,char_traits<char>>,istreambuf_iter<char,char_traits<char>>)' being compiled
+e:\STLport-4.1b6\stlport\stl/_string.h(410) : error C2784: 'random_access_iter_tag iter_category(const reverse_iter<_RandomAccessIterator,_Tp,_Reference,_Pointer,_Distance> &)' : could not deduce template argument for 'const reverse_iter<_RandomAccessIterator,_Tp,_Reference,_Pointer,_Distance> &' from 'istreambuf_iter<char,char_traits<char>>'
+        e:\STLport-4.1b6\stlport\stl/_string.h(422) : see reference to function template instantiation 'void string::_M_range_initialize(istreambuf_iter<char,char_traits<char>>,istreambuf_iter<char,char_traits<char>>)' being compiled
+e:\STLport-4.1b6\stlport\stl/_string.h(410) : error C2784: 'random_access_iter_tag iter_category(const reverse_iter<_RandomAccessIterator,_Tp,_Reference,_Pointer,_Distance> &)' : could not deduce template argument for 'const reverse_iter<_RandomAccessIterator,_Tp,_Reference,_Pointer,_Distance> &' from 'istreambuf_iter<char,char_traits<char>>'
+        e:\STLport-4.1b6\stlport\stl/_string.h(422) : see reference to function template instantiation 'void string::_M_range_initialize(istreambuf_iter<char,char_traits<char>>,istreambuf_iter<char,char_traits<char>>)' being compiled
+e:\STLport-4.1b6\stlport\stl/_string.h(410) : error C2784: 'bidirectional_iter_tag iter_category(const reverse_bidirectional_iter<_BidirectionalIterator,_Tp,_Reference,_Pointer,_Distance> &)' : could not deduce template argument for 'const reverse_bidirectional_iter<_BidirectionalIterator,_Tp,_Reference,_Pointer,_Distance> &' from 'istreambuf_iter<char,char_traits<char>>'
+        e:\STLport-4.1b6\stlport\stl/_string.h(422) : see reference to function template instantiation 'void string::_M_range_initialize(istreambuf_iter<char,char_traits<char>>,istreambuf_iter<char,char_traits<char>>)' being compiled
+e:\STLport-4.1b6\stlport\stl/_string.h(410) : error C2784: 'bidirectional_iter_tag iter_category(const reverse_bidirectional_iter<_BidirectionalIterator,_Tp,_Reference,_Pointer,_Distance> &)' : could not deduce template argument for 'const reverse_bidirectional_iter<_BidirectionalIterator,_Tp,_Reference,_Pointer,_Distance> &' from 'istreambuf_iter<char,char_traits<char>>'
+        e:\STLport-4.1b6\stlport\stl/_string.h(422) : see reference to function template instantiation 'void string::_M_range_initialize(istreambuf_iter<char,char_traits<char>>,istreambuf_iter<char,char_traits<char>>)' being compiled
+e:\STLport-4.1b6\stlport\stl/_string.h(410) : error C2784: 'output_iter_tag iter_category(const insert_iter<_Container> &)' : could not deduce template argument for 'const insert_iter<_Container> &' from 'istreambuf_iter<char,char_traits<char>>'
+        e:\STLport-4.1b6\stlport\stl/_string.h(422) : see reference to function template instantiation 'void string::_M_range_initialize(istreambuf_iter<char,char_traits<char>>,istreambuf_iter<char,char_traits<char>>)' being compiled
+e:\STLport-4.1b6\stlport\stl/_string.h(410) : error C2784: 'output_iter_tag iter_category(const insert_iter<_Container> &)' : could not deduce template argument for 'const insert_iter<_Container> &' from 'istreambuf_iter<char,char_traits<char>>'
+        e:\STLport-4.1b6\stlport\stl/_string.h(422) : see reference to function template instantiation 'void string::_M_range_initialize(istreambuf_iter<char,char_traits<char>>,istreambuf_iter<char,char_traits<char>>)' being compiled
+e:\STLport-4.1b6\stlport\stl/_string.h(410) : error C2784: 'output_iter_tag iter_category(const front_insert_iter<_Container> &)' : could not deduce template argument for 'const front_insert_iter<_Container> &' from 'istreambuf_iter<char,char_traits<char>>'
+        e:\STLport-4.1b6\stlport\stl/_string.h(422) : see reference to function template instantiation 'void string::_M_range_initialize(istreambuf_iter<char,char_traits<char>>,istreambuf_iter<char,char_traits<char>>)' being compiled
+e:\STLport-4.1b6\stlport\stl/_string.h(410) : error C2784: 'output_iter_tag iter_category(const front_insert_iter<_Container> &)' : could not deduce template argument for 'const front_insert_iter<_Container> &' from 'istreambuf_iter<char,char_traits<char>>'
+        e:\STLport-4.1b6\stlport\stl/_string.h(422) : see reference to function template instantiation 'void string::_M_range_initialize(istreambuf_iter<char,char_traits<char>>,istreambuf_iter<char,char_traits<char>>)' being compiled
+e:\STLport-4.1b6\stlport\stl/_string.h(410) : error C2784: 'output_iter_tag iter_category(const back_insert_iter<_Container> &)' : could not deduce template argument for 'const back_insert_iter<_Container> &' from 'istreambuf_iter<char,char_traits<char>>'
+        e:\STLport-4.1b6\stlport\stl/_string.h(422) : see reference to function template instantiation 'void string::_M_range_initialize(istreambuf_iter<char,char_traits<char>>,istreambuf_iter<char,char_traits<char>>)' being compiled
+e:\STLport-4.1b6\stlport\stl/_string.h(410) : error C2784: 'output_iter_tag iter_category(const back_insert_iter<_Container> &)' : could not deduce template argument for 'const back_insert_iter<_Container> &' from 'istreambuf_iter<char,char_traits<char>>'
+        e:\STLport-4.1b6\stlport\stl/_string.h(422) : see reference to function template instantiation 'void string::_M_range_initialize(istreambuf_iter<char,char_traits<char>>,istreambuf_iter<char,char_traits<char>>)' being compiled
+e:\STLport-4.1b6\stlport\stl/_string.h(410) : error C2784: 'output_iter_tag iter_category(const raw_storage_iter<_ForwardIterator,_Tp> &)' : could not deduce template argument for 'const raw_storage_iter<_ForwardIterator,_Tp> &' from 'istreambuf_iter<char,char_traits<char>>'
+        e:\STLport-4.1b6\stlport\stl/_string.h(422) : see reference to function template instantiation 'void string::_M_range_initialize(istreambuf_iter<char,char_traits<char>>,istreambuf_iter<char,char_traits<char>>)' being compiled
+e:\STLport-4.1b6\stlport\stl/_string.h(410) : error C2784: 'output_iter_tag iter_category(const raw_storage_iter<_ForwardIterator,_Tp> &)' : could not deduce template argument for 'const raw_storage_iter<_ForwardIterator,_Tp> &' from 'istreambuf_iter<char,char_traits<char>>'
+        e:\STLport-4.1b6\stlport\stl/_string.h(422) : see reference to function template instantiation 'void string::_M_range_initialize(istreambuf_iter<char,char_traits<char>>,istreambuf_iter<char,char_traits<char>>)' being compiled
+e:\STLport-4.1b6\stlport\stl/_string.h(410) : error C2784: 'random_access_iter_tag iter_category(const _Tp *)' : could not deduce template argument for 'const  *' from 'istreambuf_iter<char,char_traits<char>>'
+        e:\STLport-4.1b6\stlport\stl/_string.h(422) : see reference to function template instantiation 'void string::_M_range_initialize(istreambuf_iter<char,char_traits<char>>,istreambuf_iter<char,char_traits<char>>)' being compiled
+e:\STLport-4.1b6\stlport\stl/_string.h(410) : error C2784: '_Category iter_category(const iter<_Category,_Tp,_Distance,_Pointer,_Reference> &)' : could not deduce template argument for 'const iter<_Category,_Tp,_Distance,_Pointer,_Reference> &' from 'istreambuf_iter<char,char_traits<char>>'
+        e:\STLport-4.1b6\stlport\stl/_string.h(422) : see reference to function template instantiation 'void string::_M_range_initialize(istreambuf_iter<char,char_traits<char>>,istreambuf_iter<char,char_traits<char>>)' being compiled
+e:\STLport-4.1b6\stlport\stl/_string.h(410) : error C2784: '_Category iter_category(const iter<_Category,_Tp,_Distance,_Pointer,_Reference> &)' : could not deduce template argument for 'const iter<_Category,_Tp,_Distance,_Pointer,_Reference> &' from 'istreambuf_iter<char,char_traits<char>>'
+        e:\STLport-4.1b6\stlport\stl/_string.h(422) : see reference to function template instantiation 'void string::_M_range_initialize(istreambuf_iter<char,char_traits<char>>,istreambuf_iter<char,char_traits<char>>)' being compiled
+e:\STLport-4.1b6\stlport\stl/_string.h(410) : error C2780: 'void string::_M_range_initialize(,)' : expects 2 arguments - 4 provided
+        e:\STLport-4.1b6\stlport\stl/_string.h(409) : see declaration of '_M_range_initialize'
+        e:\STLport-4.1b6\stlport\stl/_string.h(422) : see reference to function template instantiation 'void string::_M_range_initialize(istreambuf_iter<char,char_traits<char>>,istreambuf_iter<char,char_traits<char>>)' being compiled
+
+Running: cl /silent 30-1.cpp
+30-1.cpp
+
+Running: cl /silent 31-1.cpp
+31-1.cpp
+
+Running: cl /silent 32-1.cpp
+32-1.cpp
+
+Running: cl /silent 33-1.cpp
+33-1.cpp         -------- OK -------------
+smart_ptr.h(52) : fatal error C1083: Cannot open include file: 'boost/config.hpp': No such file or directory
+
+Running: cl /silent 34-1.cpp
+34-1.cpp
+
+Running: cl /silent 35-1.cpp
+35-1.cpp
+
+Running: cl /silent 35-2.cpp
+35-2.cpp
+
+Running: cl /silent 35-3.cpp
+35-3.cpp
+
+Running: cl /silent 36-1.cpp
+36-1.cpp
+
+Running: cl /silent 37-1.cpp
+37-1.cpp
+
+Running: cl /silent 37-2.cpp
+37-2.cpp
+
+Running: cl /silent 37-3.cpp
+37-3.cpp
+
+Running: cl /silent 37-4.cpp
+37-4.cpp
+
+Running: cl /silent 38-1.cpp
+38-1.cpp
+
+Running: cl /silent 39-1.cpp
+39-1.cpp
+
+Running: cl /silent 40-1.cpp
+40-1.cpp
+
+Running: cl /silent 41-1.cpp
+41-1.cpp
+
+Running: cl /silent 42-1.cpp
+42-1.cpp
+
+Running: cl /silent 43-1.cpp
+43-1.cpp
+
+Running: cl /silent 43-2.cpp
+43-2.cpp   ---- OK, just need to remove compose.h header file ------------
+compose.h(27) : error C2953: 'unary_compose' : template has already been defined
+        compose.h(27) : see declaration of 'unary_compose'
+compose.h(34) : error C2995: 'compose1' : template function has already been defined
+        e:\STLport-4.1b6\stlport\stl/_function.h(197) : see declaration of 'compose1'
+compose.h(52) : error C2953: 'binary_compose' : template has already been defined
+        compose.h(52) : see declaration of 'binary_compose'
+compose.h(61) : error C2995: 'compose2' : template function has already been defined
+        e:\STLport-4.1b6\stlport\stl/_function.h(222) : see declaration of 'compose2'
+
+Running: cl /silent 44-1.cpp
+44-1.cpp
+
+Running: cl /silent 45-1.cpp
+45-1.cpp
+
+Running: cl /silent 45-2.cpp
+45-2.cpp
+
+Running: cl /silent 46-1.cpp
+46-1.cpp
+
+Running: cl /silent 47-1.cpp
+47-1.cpp
+
+Running: cl /silent 48-1.cpp
+48-1.cpp
+fatal error C1083: Cannot open source file: '48-1.cpp': No such file or directory
+
+Running: cl /silent 49-1.cpp
+49-1.cpp --------- On purpose -----------------
+e:\STLport-4.1b6\stlport\stl/_algo.c(832) : error C2784: '_Distance operator -(const reverse_iter<_RandomAccessIterator,_Tp,_Reference,_Pointer,_Distance> &,const reverse_iter<_RandomAccessIterator,_Tp,_Reference,_Pointer,_Distance> &)' : could not deduce template argument for 'const reverse_iter<_RandomAccessIterator,_Tp,_Reference,_Pointer,_Distance> &' from 'list<int>::iter'
+        49-1.cpp(44) : see reference to function template instantiation 'void sort(iter,iter)' being compiled
+e:\STLport-4.1b6\stlport\stl/_algo.c(832) : error C2784: '_Distance operator -(const reverse_iter<_RandomAccessIterator,_Tp,_Reference,_Pointer,_Distance> &,const reverse_iter<_RandomAccessIterator,_Tp,_Reference,_Pointer,_Distance> &)' : could not deduce template argument for 'const reverse_iter<_RandomAccessIterator,_Tp,_Reference,_Pointer,_Distance> &' from 'list<int>::iter'
+        49-1.cpp(44) : see reference to function template instantiation 'void sort(iter,iter)' being compiled
+e:\STLport-4.1b6\stlport\stl/_algo.c(832) : error C2676: binary '-' : 'list<int>::iter' does not define this operator or a conversion to a type acceptable to the predefined operator
+        49-1.cpp(44) : see reference to function template instantiation 'void sort(iter,iter)' being compiled
+
+Running: cl /silent 50-1.cpp
+50-1.cpp
+
+Running: cl /silent 50-2.cpp
+50-2.cpp
+
+Running: cl /silent 50-3.cpp
+50-3.cpp --------- On purpose -----------------
+e:\STLport-4.1b6\stlport\stl/_function.h(160) : warning C4181: qualifier applied to reference type ignored
+e:\STLport-4.1b6\stlport\stl/_function.h(159) : error C2529: '<Unknown>' : reference to reference is illegal
+
+Running: cl /silent a-1.cpp
+a-1.cpp   --------- Not worrying about it -----------
+a-1.cpp(19) : error C2039: 'toupper' : is not a member of '_STL'
+a-1.cpp(20) : error C2039: 'toupper' : is not a member of '_STL'
+a-1.cpp(28) : error C2039: 'ctype' : is not a member of '_STL'
+a-1.cpp(28) : error C2143: syntax error : missing ';' before '<'
+a-1.cpp(28) : error C2059: syntax error : '<'
+a-1.cpp(28) : error C2238: unexpected token(s) preceding ';'
+a-1.cpp(29) : error C2039: 'ctype' : is not a member of '_STL'
+a-1.cpp(29) : error C2629: unexpected 'lt_str_1::lt_char ('
+a-1.cpp(29) : error C2334: unexpected token(s) preceding ':'; skipping apparent function body
+a-1.cpp(34) : error C2039: 'locale' : is not a member of '_STL'
+a-1.cpp(34) : error C2146: syntax error : missing ';' before identifier 'loc'
+a-1.cpp(34) : error C2501: 'locale' : missing storage-or type specifiers
+a-1.cpp(34) : error C2501: 'loc' : missing storage-or type specifiers
+a-1.cpp(35) : error C2039: 'ctype' : is not a member of '_STL'
+a-1.cpp(35) : error C2143: syntax error : missing ';' before '<'
+a-1.cpp(35) : error C2059: syntax error : '<'
+a-1.cpp(35) : error C2238: unexpected token(s) preceding ';'
+a-1.cpp(36) : error C2039: 'locale' : is not a member of '_STL'
+a-1.cpp(36) : error C2039: 'locale' : is not a member of '_STL'
+a-1.cpp(36) : error C2629: unexpected 'lt_str_1 ('
+a-1.cpp(36) : error C2334: unexpected token(s) preceding ':'; skipping apparent function body
+a-1.cpp(102) : error C2039: 'locale' : is not a member of '_STL'
+a-1.cpp(102) : error C2065: 'locale' : undeclared identifier
+a-1.cpp(102) : error C2146: syntax error : missing ';' before identifier 'L'
+a-1.cpp(102) : error C2065: 'L' : undeclared identifier
+a-1.cpp(102) : error C2039: 'locale' : is not a member of '_STL'
+a-1.cpp(102) : error C2065: 'classic' : undeclared identifier
+a-1.cpp(105) : error C2039: 'ctype' : is not a member of '_STL'
+a-1.cpp(105) : error C2143: syntax error : missing ';' before '<'
+a-1.cpp(105) : error C2734: 'ctype' : const object must be initialized if not extern
+a-1.cpp(105) : error C2143: syntax error : missing ';' before '<'
+a-1.cpp(105) : fatal error C1903: unable to recover from previous error(s); stopping compilation
+
+Running: cl /silent b-1.cpp
+b-1.cpp
+
+Running: cl /silent b-2.cpp
+b-2.cpp

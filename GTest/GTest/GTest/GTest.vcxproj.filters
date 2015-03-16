@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source Files\1 Num">
+      <UniqueIdentifier>{bab12d37-181f-43d5-8645-2d1f42bfc36f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\2 Str">
+      <UniqueIdentifier>{bfd21ed1-1065-4696-ba95-da7f487030e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\3 Queue">
+      <UniqueIdentifier>{86b9d9c3-b984-40d3-a6e9-411edde6ad2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\4 Counter">
+      <UniqueIdentifier>{ac347a0a-014b-47e7-b378-6aadfa1ca6c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\10 memory leak checker">
+      <UniqueIdentifier>{1e532102-dcf6-4ded-ad31-7662505a2fe1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\5 Timimg">
+      <UniqueIdentifier>{a62a6b1f-f533-4f2f-9c6e-b1d2c0580a57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\9 listener">
+      <UniqueIdentifier>{9a7c84f9-7241-4b1d-b3f0-c247b4f7f114}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\8 Combine">
+      <UniqueIdentifier>{fb14fbb9-f020-4e25-b010-c675776e5e73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\6 type-parameterized">
+      <UniqueIdentifier>{1a3f59b3-8e2c-4b8d-b9d3-030acc95bde0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\7 value-parameterized">
+      <UniqueIdentifier>{4e477b88-adad-4bc2-831f-7ee352ab58c7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\src\gtest_main.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\samples\sample1.cc">
+      <Filter>Source Files\1 Num</Filter>
+    </ClCompile>
+    <ClCompile Include="src\samples\sample1_unittest.cc">
+      <Filter>Source Files\1 Num</Filter>
+    </ClCompile>
+    <ClCompile Include="src\samples\sample2.cc">
+      <Filter>Source Files\2 Str</Filter>
+    </ClCompile>
+    <ClCompile Include="src\samples\sample2_unittest.cc">
+      <Filter>Source Files\2 Str</Filter>
+    </ClCompile>
+    <ClCompile Include="src\samples\sample4.cc">
+      <Filter>Source Files\4 Counter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\samples\sample4_unittest.cc">
+      <Filter>Source Files\4 Counter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\samples\sample6_unittest.cc">
+      <Filter>Source Files\6 type-parameterized</Filter>
+    </ClCompile>
+    <ClCompile Include="src\samples\sample7_unittest.cc">
+      <Filter>Source Files\7 value-parameterized</Filter>
+    </ClCompile>
+    <ClCompile Include="src\samples\sample5_unittest.cc">
+      <Filter>Source Files\5 Timimg</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\samples\sample2.h">
+      <Filter>Source Files\2 Str</Filter>
+    </ClInclude>
+    <ClInclude Include="src\samples\sample3-inl.h">
+      <Filter>Source Files\3 Queue</Filter>
+    </ClInclude>
+    <ClInclude Include="src\samples\sample4.h">
+      <Filter>Source Files\4 Counter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\samples\sample1.h">
+      <Filter>Source Files\1 Num</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\samples\Readme.txt" />
+  </ItemGroup>
+</Project>

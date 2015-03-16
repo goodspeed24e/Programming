@@ -1,0 +1,13 @@
+<table width="989"  border="1" cellpadding="0" cellspacing="0">
+  <tr  bordercolor="#CCCCCC" bgcolor="#eaeaea" >
+    <td height="103" colspan="3"> <span class="style2">  <a href="index.php?Select=1">首頁</a><a href="index.php?Select=10">客戶管理</a> <a href="index.php?Select=15">報價作業</a> <a href="index.php?Select=20"> 廠商管理</a> <a href="index.php?Select=25">採購管理</a><a href="index.php?Select=30"> 庫存管理</a><a href="index.php?Select=35"> 進貨作業</a><a href="index.php?Select=40"> 銷售管理</a> <a href="index.php?Select=65">系統設定</a> 
+        <?php
+	include("mysqlcntdb.php");
+	if (empty($Select)) { 
+		$Select=1;
+	}
+	?>
+	</span> 
+	</td>
+  </tr>
+  </table>

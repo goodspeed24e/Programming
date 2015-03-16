@@ -1,0 +1,21 @@
+Every function having the potential to fail during execution needs a way to 
+communicate this to its caller appropriately. In C++, this is done either 
+by using a return value or by throwing an exception. A return value is 
+usually used if the failure is not really considered exceptional in a 
+common sense. The caller is expected to check the return value and to react 
+accordingly.
+
+Exceptions are used to indicate exceptional conditions that are not 
+considered to happen normally. A good example is the exception of type 
+std::bad_alloc that is thrown if a dynamic memory allocation using new 
+fails. Since memory can usually be reserved without any issue, it would be 
+cumbersome to always have to check the return value.
+
+This chapter introduces two Boost C++ Libraries assisting a developer in 
+leveraging error handling: Boost.System translates operating system 
+specific error codes into platform independent ones. Thanks to 
+Boost.System, functions returning a value based on an operating system type 
+can be designed in a platform-independent way. Boost.Exception allows to 
+add additional information to any exception that can be utilized inside the 
+catch handler accordingly to better react to the exception.
+

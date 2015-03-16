@@ -1,0 +1,13 @@
+-- 
+-- 資料表格式： `counter`
+-- 
+
+CREATE TABLE `counter` (
+  `counterid` varchar(2) NOT NULL default '1',
+  `vendcnt` int(6) NOT NULL default '1',
+  `custcnt` int(6) NOT NULL default '1',
+  `prodcnt` int(6) NOT NULL default '1',
+  `outicnt` int(6) NOT NULL default '1',
+  `trancnt` int(6) NOT NULL default '1',
+  PRIMARY KEY  (`counterid`)
+) ENGINE=MyISAM DEFAULT CHARSET=big5;

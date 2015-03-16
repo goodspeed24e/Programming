@@ -1,0 +1,20 @@
+-- 
+-- 資料表格式： `transaction`
+-- 
+
+CREATE TABLE `transaction` (
+  `trancode` varchar(2) NOT NULL,
+  `trandate` date NOT NULL,
+  `tranno` varchar(10) NOT NULL,
+  `tranpono` varchar(10) NOT NULL,
+  `tranremark` varchar(100) NOT NULL,
+  `tranvendno` varchar(10) NOT NULL,
+  `tranprodno` varchar(10) NOT NULL,
+  `tranprodname` varchar(40) NOT NULL,
+  `tranprodqty` int(6) NOT NULL,
+  `tranunit` varchar(10) NOT NULL,
+  `tranpric` int(6) NOT NULL,
+  `tranamt` int(8) NOT NULL,
+  PRIMARY KEY  (`tranno`,`tranpono`,`tranprodno`)
+) ENGINE=MyISAM DEFAULT CHARSET=big5;
+

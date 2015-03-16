@@ -1,0 +1,19 @@
+2012/09/16-13:01:42.246 cfc Log #26: 851 ops saved to Table #28 OK
+2012/09/16-13:01:42.246 cfc Archiving tmp\leveldb_c_test\000026.log: IO error: RenameFile tmp\leveldb_c_test\000026.log /lost/tmp\leveldb_c_test\000026.log: The system cannot find the path specified.
+
+2012/09/16-13:01:42.246 cfc Table #5: 1598 entries OK
+2012/09/16-13:01:42.246 cfc Table #7: 1596 entries OK
+2012/09/16-13:01:42.246 cfc Table #9: 1596 entries OK
+2012/09/16-13:01:42.246 cfc Table #11: 1596 entries OK
+2012/09/16-13:01:42.246 cfc Table #13: 1596 entries OK
+2012/09/16-13:01:42.262 cfc Table #15: 1596 entries OK
+2012/09/16-13:01:42.262 cfc Table #17: 1596 entries OK
+2012/09/16-13:01:42.262 cfc Table #19: 1596 entries OK
+2012/09/16-13:01:42.262 cfc Table #21: 1596 entries OK
+2012/09/16-13:01:42.262 cfc Table #23: 1596 entries OK
+2012/09/16-13:01:42.262 cfc Table #25: 1596 entries OK
+2012/09/16-13:01:42.262 cfc Table #27: 1596 entries OK
+2012/09/16-13:01:42.262 cfc Table #28: 851 entries OK
+2012/09/16-13:01:42.308 cfc Archiving tmp\leveldb_c_test\MANIFEST-000002: IO error: RenameFile tmp\leveldb_c_test\MANIFEST-000002 /lost/tmp\leveldb_c_test\MANIFEST-000002: The system cannot find the path specified.
+
+2012/09/16-13:01:42.308 cfc **** Repaired leveldb tmp\leveldb_c_test; recovered 13 files; 766794 bytes. Some data may have been lost. ****

@@ -1,0 +1,12 @@
+This chapter, which deals with function objects, could have easily been 
+named 'Functions of higher order' as well. This actually refers to functions
+that can be passed to or returned from other functions. Functions of higher 
+order are implemented as function objects in C++ thus, the original title 
+still makes sense.
+
+Throughout this chapter, several Boost C++ Libraries dealing with function
+objects are presented. While Boost.Bind replaces the well-known 
+std::bind1st() and std::bind2nd() functions from the C++ standard,
+Boost.Function provides a class to encapsulate function pointers. 
+Finally, Boost.Lambda introduces a way of creating anonymous functions.
+

@@ -1,0 +1,389 @@
+Compiled with CC = cl2 /nologo
+INCLUDE = E:\MICROS~1.NET\VC7\ATLMFC\INCLUDE;E:\MICROS~1.NET\VC7\INCLUDE;
+
+0.cpp
+
+2-1.cpp
+
+2-2.cpp
+
+2-3.cpp
+
+2-4.cpp
+
+2-5.cpp
+
+3-1.cpp
+
+4-1.cpp
+
+5-1.cpp
+
+5-2.cpp
+
+6-1.cpp
+
+7-1.cpp
+
+7-2.cpp
+
+7-3.cpp
+
+7-4.cpp
+
+7-5.cpp
+
+7-6.cpp --- OK ---
+7-6.cpp(10) : fatal error C1083: Cannot open include file: 'boost/smart_ptr.hpp': No such file or directory
+
+8-1.cpp
+
+8-2.cpp ---- on purpose ----
+E:\Microsoft Visual Studio.NET\Vc7\include\vector(578) : error C2440: 'initializing' : cannot convert from 'const std::auto_ptr<_Ty>' to 'std::auto_ptr<_Ty>'
+        with
+        [
+            _Ty=Widget
+        ]
+        and
+        [
+            _Ty=Widget
+        ]
+        No copy constructor available for class 'std::auto_ptr<_Ty>'
+        with
+        [
+            _Ty=Widget
+        ]
+        E:\Microsoft Visual Studio.NET\Vc7\include\vector(577) : while compiling class-template member function 'void std::vector<_Ty,_Ax>::_Insert_n(std::vector<_Ty,_Ax>::iterator,std::vector<_Ty,_Ax>::size_type,const _Ty &)'
+        with
+        [
+            _Ty=std::auto_ptr<Widget>,
+            _Ax=std::allocator<std::auto_ptr<Widget>>
+        ]
+        8-2.cpp(34) : see reference to class template instantiation 'std::vector<_Ty,_Ax>' being compiled
+        with
+        [
+            _Ty=std::auto_ptr<Widget>,
+            _Ax=std::allocator<std::auto_ptr<Widget>>
+        ]
+
+9-1.cpp
+
+9-2.cpp
+
+9-3.cpp
+
+9-4.cpp
+
+10-1.cpp !!! --- still uses Charalloc ---------
+E:\Microsoft Visual Studio.NET\Vc7\include\list(908) : error C2039: '_Charalloc' : is not a member of 'MyLib::SpecialAllocator<T>'
+        with
+        [
+            T=Widget
+        ]
+        E:\Microsoft Visual Studio.NET\Vc7\include\list(891) : while compiling class-template member function 'std::list<_Ty,_Ax>::_Nodeptr std::list<_Ty,_Ax>::_Buynode(void)'
+        with
+        [
+            _Ty=Widget,
+            _Ax=SAW
+        ]
+        10-1.cpp(37) : see reference to class template instantiation 'std::list<_Ty,_Ax>' being compiled
+        with
+        [
+            _Ty=Widget,
+            _Ax=SAW
+        ]
+
+11-1.cpp !!! --- still uses charalloc ------
+E:\Microsoft Visual Studio.NET\Vc7\include\list(908) : error C2039: '_Charalloc' : is not a member of 'MyLib::SpecificHeapAllocator<T,Heap>'
+        with
+        [
+            T=Widget,
+            Heap=Heap2
+        ]
+        E:\Microsoft Visual Studio.NET\Vc7\include\list(891) : while compiling class-template member function 'std::list<_Ty,_Ax>::_Nodeptr std::list<_Ty,_Ax>::_Buynode(void)'
+        with
+        [
+            _Ty=Widget,
+            _Ax=MyLib::SpecificHeapAllocator<Widget,Heap2>
+        ]
+        11-1.cpp(92) : see reference to class template instantiation 'std::list<_Ty,_Ax>' being compiled
+        with
+        [
+            _Ty=Widget,
+            _Ax=MyLib::SpecificHeapAllocator<Widget,Heap2>
+        ]
+
+12-1.cpp
+
+12-2.cpp
+
+14-1.cpp
+
+16-1.cpp
+
+16-2.cpp
+
+16-3.cpp
+
+17-1.cpp
+
+18-1.cpp
+
+19-1.cpp
+
+20-1.cpp
+
+20-2.cpp
+
+21-1.cpp
+
+21-2.cpp
+
+21-3.cpp
+
+21-4.cpp
+
+22-1.cpp ---------------- on purpose -------------
+22-1.cpp(22) : error C2166: l-value specifies const object
+22-1.cpp(30) : error C2166: l-value specifies const object
+
+22-2.cpp
+
+23-1.cpp
+
+23-2.cpp
+
+24-1.cpp
+
+25-1.cpp
+
+26-1.cpp
+
+27-1.cpp
+
+28-1.cpp
+
+29-1.cpp
+
+30-1.cpp
+
+31-1.cpp
+
+32-1.cpp
+
+33-1.cpp ----------- OK ------------------
+d:\books\estl\Code\smart_ptr.h(52) : fatal error C1083: Cannot open include file: 'boost/config.hpp': No such file or directory
+
+34-1.cpp
+
+35-1.cpp
+
+35-2.cpp
+
+35-3.cpp
+
+36-1.cpp
+
+37-1.cpp
+
+37-2.cpp
+
+37-3.cpp
+
+37-4.cpp
+E:\Microsoft Visual Studio.NET\Vc7\include\numeric(25) : warning C4244: 'argument' : conversion from 'double' to 'const float', possible loss of data
+        37-4.cpp(83) : see reference to function template instantiation '_Ty std::accumulate(_InIt,_InIt,_Ty,_Fn2)' being compiled
+        with
+        [
+            _Ty=double,
+            _InIt=std::vector<float,std::allocator<float>>::iterator,
+            _Fn2=std::multiplies<float>
+        ]
+
+38-1.cpp
+
+39-1.cpp
+
+40-1.cpp
+
+41-1.cpp !!! fails
+41-1.cpp(87) : error C2667: 'std::mem_fun' : none of 4 overloads have a best conversion
+        could be 'std::const_mem_fun1_t<_Result,_Ty,_Arg> std::mem_fun(_Result (_Ty::*)(_Arg) const)'
+        E:\Microsoft Visual Studio.NET\Vc7\include\functional(504) : see declaration of 'std::mem_fun'
+        or       'std::const_mem_fun_t<_Result,_Ty> std::mem_fun(_Result (_Ty::*)(void) const)'
+        E:\Microsoft Visual Studio.NET\Vc7\include\functional(495) : see declaration of 'std::mem_fun'
+        or       'std::mem_fun1_t<_Result,_Ty,_Arg> std::mem_fun(_Result (_Ty::*)(_Arg))'
+        E:\Microsoft Visual Studio.NET\Vc7\include\functional(487) : see declaration of 'std::mem_fun'
+        or       'std::mem_fun_t<_Result,_Ty> std::mem_fun(_Result (_Ty::*)(void))'
+        E:\Microsoft Visual Studio.NET\Vc7\include\functional(479) : see declaration of 'std::mem_fun'
+41-1.cpp(87) : error C2668: 'std::mem_fun' : ambiguous call to overloaded function
+        could be 'std::const_mem_fun1_t<_Result,_Ty,_Arg> std::mem_fun(_Result (_Ty::*)(_Arg) const)'
+        E:\Microsoft Visual Studio.NET\Vc7\include\functional(504) : see declaration of 'std::mem_fun'
+        or       'std::const_mem_fun_t<_Result,_Ty> std::mem_fun(_Result (_Ty::*)(void) const)'
+        E:\Microsoft Visual Studio.NET\Vc7\include\functional(495) : see declaration of 'std::mem_fun'
+        or       'std::mem_fun1_t<_Result,_Ty,_Arg> std::mem_fun(_Result (_Ty::*)(_Arg))'
+        E:\Microsoft Visual Studio.NET\Vc7\include\functional(487) : see declaration of 'std::mem_fun'
+        or       'std::mem_fun_t<_Result,_Ty> std::mem_fun(_Result (_Ty::*)(void))'
+        E:\Microsoft Visual Studio.NET\Vc7\include\functional(479) : see declaration of 'std::mem_fun'
+
+42-1.cpp
+
+43-1.cpp !!! --- fails -----
+43-1.cpp(43) : error C2667: 'std::mem_fun_ref' : none of 4 overloads have a best conversion
+        could be 'std::const_mem_fun1_ref_t<_Result,_Ty,_Arg> std::mem_fun_ref(_Result (_Ty::*)(_Arg) const)'
+        E:\Microsoft Visual Studio.NET\Vc7\include\functional(633) : see declaration of 'std::mem_fun_ref'
+        or       'std::const_mem_fun_ref_t<_Result,_Ty> std::mem_fun_ref(_Result (_Ty::*)(void) const)'
+        E:\Microsoft Visual Studio.NET\Vc7\include\functional(624) : see declaration of 'std::mem_fun_ref'
+        or       'std::mem_fun1_ref_t<_Result,_Ty,_Arg> std::mem_fun_ref(_Result (_Ty::*)(_Arg))'
+        E:\Microsoft Visual Studio.NET\Vc7\include\functional(616) : see declaration of 'std::mem_fun_ref'
+        or       'std::mem_fun_ref_t<_Result,_Ty> std::mem_fun_ref(_Result (_Ty::*)(void))'
+        E:\Microsoft Visual Studio.NET\Vc7\include\functional(607) : see declaration of 'std::mem_fun_ref'
+43-1.cpp(43) : error C2668: 'std::mem_fun_ref' : ambiguous call to overloaded function
+        could be 'std::const_mem_fun1_ref_t<_Result,_Ty,_Arg> std::mem_fun_ref(_Result (_Ty::*)(_Arg) const)'
+        E:\Microsoft Visual Studio.NET\Vc7\include\functional(633) : see declaration of 'std::mem_fun_ref'
+        or       'std::const_mem_fun_ref_t<_Result,_Ty> std::mem_fun_ref(_Result (_Ty::*)(void) const)'
+        E:\Microsoft Visual Studio.NET\Vc7\include\functional(624) : see declaration of 'std::mem_fun_ref'
+        or       'std::mem_fun1_ref_t<_Result,_Ty,_Arg> std::mem_fun_ref(_Result (_Ty::*)(_Arg))'
+        E:\Microsoft Visual Studio.NET\Vc7\include\functional(616) : see declaration of 'std::mem_fun_ref'
+        or       'std::mem_fun_ref_t<_Result,_Ty> std::mem_fun_ref(_Result (_Ty::*)(void))'
+        E:\Microsoft Visual Studio.NET\Vc7\include\functional(607) : see declaration of 'std::mem_fun_ref'
+43-1.cpp(53) : error C2667: 'std::mem_fun_ref' : none of 4 overloads have a best conversion
+        could be 'std::const_mem_fun1_ref_t<_Result,_Ty,_Arg> std::mem_fun_ref(_Result (_Ty::*)(_Arg) const)'
+        E:\Microsoft Visual Studio.NET\Vc7\include\functional(633) : see declaration of 'std::mem_fun_ref'
+        or       'std::const_mem_fun_ref_t<_Result,_Ty> std::mem_fun_ref(_Result (_Ty::*)(void) const)'
+        E:\Microsoft Visual Studio.NET\Vc7\include\functional(624) : see declaration of 'std::mem_fun_ref'
+        or       'std::mem_fun1_ref_t<_Result,_Ty,_Arg> std::mem_fun_ref(_Result (_Ty::*)(_Arg))'
+        E:\Microsoft Visual Studio.NET\Vc7\include\functional(616) : see declaration of 'std::mem_fun_ref'
+        or       'std::mem_fun_ref_t<_Result,_Ty> std::mem_fun_ref(_Result (_Ty::*)(void))'
+        E:\Microsoft Visual Studio.NET\Vc7\include\functional(607) : see declaration of 'std::mem_fun_ref'
+43-1.cpp(53) : error C2668: 'std::mem_fun_ref' : ambiguous call to overloaded function
+        could be 'std::const_mem_fun1_ref_t<_Result,_Ty,_Arg> std::mem_fun_ref(_Result (_Ty::*)(_Arg) const)'
+        E:\Microsoft Visual Studio.NET\Vc7\include\functional(633) : see declaration of 'std::mem_fun_ref'
+        or       'std::const_mem_fun_ref_t<_Result,_Ty> std::mem_fun_ref(_Result (_Ty::*)(void) const)'
+        E:\Microsoft Visual Studio.NET\Vc7\include\functional(624) : see declaration of 'std::mem_fun_ref'
+        or       'std::mem_fun1_ref_t<_Result,_Ty,_Arg> std::mem_fun_ref(_Result (_Ty::*)(_Arg))'
+        E:\Microsoft Visual Studio.NET\Vc7\include\functional(616) : see declaration of 'std::mem_fun_ref'
+        or       'std::mem_fun_ref_t<_Result,_Ty> std::mem_fun_ref(_Result (_Ty::*)(void))'
+        E:\Microsoft Visual Studio.NET\Vc7\include\functional(607) : see declaration of 'std::mem_fun_ref'
+
+43-2.cpp
+
+44-1.cpp
+
+45-1.cpp
+
+45-2.cpp
+
+46-1.cpp !!! --- same error -----------
+46-1.cpp(114) : error C2667: 'std::mem_fun_ref' : none of 4 overloads have a best conversion
+        could be 'std::const_mem_fun1_ref_t<_Result,_Ty,_Arg> std::mem_fun_ref(_Result (_Ty::*)(_Arg) const)'
+        E:\Microsoft Visual Studio.NET\Vc7\include\functional(633) : see declaration of 'std::mem_fun_ref'
+        or       'std::const_mem_fun_ref_t<_Result,_Ty> std::mem_fun_ref(_Result (_Ty::*)(void) const)'
+        E:\Microsoft Visual Studio.NET\Vc7\include\functional(624) : see declaration of 'std::mem_fun_ref'
+        or       'std::mem_fun1_ref_t<_Result,_Ty,_Arg> std::mem_fun_ref(_Result (_Ty::*)(_Arg))'
+        E:\Microsoft Visual Studio.NET\Vc7\include\functional(616) : see declaration of 'std::mem_fun_ref'
+        or       'std::mem_fun_ref_t<_Result,_Ty> std::mem_fun_ref(_Result (_Ty::*)(void))'
+        E:\Microsoft Visual Studio.NET\Vc7\include\functional(607) : see declaration of 'std::mem_fun_ref'
+46-1.cpp(114) : error C2668: 'std::mem_fun_ref' : ambiguous call to overloaded function
+        could be 'std::const_mem_fun1_ref_t<_Result,_Ty,_Arg> std::mem_fun_ref(_Result (_Ty::*)(_Arg) const)'
+        E:\Microsoft Visual Studio.NET\Vc7\include\functional(633) : see declaration of 'std::mem_fun_ref'
+        or       'std::const_mem_fun_ref_t<_Result,_Ty> std::mem_fun_ref(_Result (_Ty::*)(void) const)'
+        E:\Microsoft Visual Studio.NET\Vc7\include\functional(624) : see declaration of 'std::mem_fun_ref'
+        or       'std::mem_fun1_ref_t<_Result,_Ty,_Arg> std::mem_fun_ref(_Result (_Ty::*)(_Arg))'
+        E:\Microsoft Visual Studio.NET\Vc7\include\functional(616) : see declaration of 'std::mem_fun_ref'
+        or       'std::mem_fun_ref_t<_Result,_Ty> std::mem_fun_ref(_Result (_Ty::*)(void))'
+        E:\Microsoft Visual Studio.NET\Vc7\include\functional(607) : see declaration of 'std::mem_fun_ref'
+46-1.cpp(114) : error C2780: '_OutIt std::transform(_InIt1,_InIt1,_InIt2,_OutIt,_Fn2)' : expects 5 arguments - 4 provided
+        E:\Microsoft Visual Studio.NET\Vc7\include\algorithm(394) : see declaration of 'std::transform'
+
+47-1.cpp
+
+49-1.cpp
+E:\Microsoft Visual Studio.NET\Vc7\include\algorithm(1789) : error C2784: 'size_t std::operator -(const std::reverse_iterator<_RanIt> &,const std::reverse_iterator<_RanIt> &)' : could not deduce template argument for 'const std::reverse_iterator<_RanIt> &' from '_RanIt'
+        with
+        [
+            _RanIt=std::list<int,std::allocator<int>>::iterator
+        ]
+        49-1.cpp(44) : see reference to function template instantiation 'void std::sort(_RanIt,_RanIt)' being compiled
+        with
+        [
+            _RanIt=std::list<int,std::allocator<int>>::iterator
+        ]
+E:\Microsoft Visual Studio.NET\Vc7\include\algorithm(1789) : error C2784: 'size_t std::operator -(const std::reverse_iterator<_RanIt> &,const std::reverse_iterator<_RanIt> &)' : could not deduce template argument for 'const std::reverse_iterator<_RanIt> &' from '_RanIt'
+        with
+        [
+            _RanIt=std::list<int,std::allocator<int>>::iterator
+        ]
+        49-1.cpp(44) : see reference to function template instantiation 'void std::sort(_RanIt,_RanIt)' being compiled
+        with
+        [
+            _RanIt=std::list<int,std::allocator<int>>::iterator
+        ]
+E:\Microsoft Visual Studio.NET\Vc7\include\algorithm(1789) : error C2784: 'size_t std::operator -(const std::reverse_iterator<_RanIt> &,const std::reverse_iterator<_RanIt> &)' : could not deduce template argument for 'const std::reverse_iterator<_RanIt> &' from '_RanIt'
+        with
+        [
+            _RanIt=std::list<int,std::allocator<int>>::iterator
+        ]
+        49-1.cpp(44) : see reference to function template instantiation 'void std::sort(_RanIt,_RanIt)' being compiled
+        with
+        [
+            _RanIt=std::list<int,std::allocator<int>>::iterator
+        ]
+E:\Microsoft Visual Studio.NET\Vc7\include\algorithm(1789) : error C2784: 'size_t std::operator -(const std::reverse_iterator<_RanIt> &,const std::reverse_iterator<_RanIt> &)' : could not deduce template argument for 'const std::reverse_iterator<_RanIt> &' from '_RanIt'
+        with
+        [
+            _RanIt=std::list<int,std::allocator<int>>::iterator
+        ]
+        49-1.cpp(44) : see reference to function template instantiation 'void std::sort(_RanIt,_RanIt)' being compiled
+        with
+        [
+            _RanIt=std::list<int,std::allocator<int>>::iterator
+        ]
+E:\Microsoft Visual Studio.NET\Vc7\include\algorithm(1789) : error C2676: binary '-' : 'std::list<_Ty,_Ax>::iterator' does not define this operator or a conversion to a type acceptable to the predefined operator
+        with
+        [
+            _Ty=int,
+            _Ax=std::allocator<int>
+        ]
+        49-1.cpp(44) : see reference to function template instantiation 'void std::sort(_RanIt,_RanIt)' being compiled
+        with
+        [
+            _RanIt=std::list<int,std::allocator<int>>::iterator
+        ]
+E:\Microsoft Visual Studio.NET\Vc7\include\algorithm(1789) : error C2780: 'void std::_Sort(_RanIt,_RanIt,_Diff,_Pr)' : expects 4 arguments - 3 provided
+        E:\Microsoft Visual Studio.NET\Vc7\include\algorithm(1907) : see declaration of 'std::_Sort'
+        49-1.cpp(44) : see reference to function template instantiation 'void std::sort(_RanIt,_RanIt)' being compiled
+        with
+        [
+            _RanIt=std::list<int,std::allocator<int>>::iterator
+        ]
+
+50-1.cpp
+
+50-2.cpp
+
+50-3.cpp ------ on purpose ---------------
+E:\Microsoft Visual Studio.NET\Vc7\include\functional(304) : warning C4181: qualifier applied to reference type ignored
+        50-3.cpp(29) : see reference to class template instantiation 'std::binder2nd<_Fn2>' being compiled
+        with
+        [
+            _Fn2=std::mem_fun1_t<int,Widget,std::basic_istream<char,std::char_traits<char>> &>
+        ]
+E:\Microsoft Visual Studio.NET\Vc7\include\functional(303) : error C2529: '_Right' : reference to reference is illegal
+        50-3.cpp(29) : see reference to class template instantiation 'std::binder2nd<_Fn2>' being compiled
+        with
+        [
+            _Fn2=std::mem_fun1_t<int,Widget,std::basic_istream<char,std::char_traits<char>> &>
+        ]
+
+a-1.cpp
+a-1.cpp(19) : error C2039: 'toupper' : is not a member of 'std'
+a-1.cpp(20) : error C2039: 'toupper' : is not a member of 'std'
+a-1.cpp(109) : error C2039: 'toupper' : is not a member of 'std'
+a-1.cpp(109) : error C2660: 'toupper' : function does not take 2 parameters
+a-1.cpp(109) : error C2039: 'toupper' : is not a member of 'std'
+a-1.cpp(109) : error C2660: 'toupper' : function does not take 2 parameters
+
+b-1.cpp
+
+b-2.cpp

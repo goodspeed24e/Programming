@@ -1,0 +1,6 @@
+/*
+The C++ standard defines four cast operators: static_cast, dynamic_cast, 
+const_cast and reinterpret_cast. The two libraries Boost.Conversion and 
+Boost.NumericConversion define additional cast operators specialized for 
+certain type casts.
+*/

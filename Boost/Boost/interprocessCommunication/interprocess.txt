@@ -1,0 +1,21 @@
+Interprocess communication describes mechanisms to exchange data between 
+different applications running on the same computer. This does not include 
+network communication though. If data is required to be exchanged between 
+applications running on different computers connected via network, take a 
+look at Chapter 7, Asynchronous Input and Output which covers the 
+Boost.Asio library.
+
+This chapter presents the Boost.Interprocess library that contains numerous 
+classes providing an abstract layer for operating system specific 
+interprocess communication interfaces. Even though the concepts of 
+interprocess communication are closely related between different 
+operating systems, the interfaces can vary greatly. Boost.Interprocess 
+allows a platform independent access to these functions from C++.
+
+While Boost.Asio can be used for exchanging data between applications 
+running on the same computer as well, the performance using 
+Boost.Interprocess is usually better. Boost.Interprocess actually accesses 
+operating system functions optimized for the data exchange between 
+applications running on the same computer and thus should be the first 
+choice whenever data exchange without a network is required.
+

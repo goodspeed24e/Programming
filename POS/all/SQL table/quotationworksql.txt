@@ -1,0 +1,16 @@
+-- 
+-- 資料表格式： `quotationwork`
+-- 
+
+CREATE TABLE `quotationwork` (
+  `quwkno` varchar(10) NOT NULL,
+  `quwkprod` varchar(10) NOT NULL,
+  `quwkcust` varchar(10) NOT NULL,
+  `quwktype` varchar(10) NOT NULL,
+  `quwkpric` int(6) NOT NULL,
+  `quwkqty` int(6) NOT NULL,
+  `quwksdate` date NOT NULL,
+  PRIMARY KEY  (`quwkno`,`quwkprod`,`quwkcust`),
+  KEY `quwkcust` (`quwkcust`)
+) ENGINE=MyISAM DEFAULT CHARSET=big5;
+

@@ -1,0 +1,414 @@
+Compiled with CC = dogpp
+INCLUDE = e:\SXL\INCLUDE;e:\VC98\ATL\INCLUDE;e:\VC98\INCLUDE;e:\VC98\MFC\INCLUDE;
+
+Running: gpp -w 0.cpp
+
+
+Running: gpp -w 2-1.cpp
+
+
+Running: gpp -w 2-2.cpp
+
+
+Running: gpp -w 2-3.cpp
+
+
+Running: gpp -w 2-4.cpp
+
+
+Running: gpp -w 2-5.cpp
+
+
+Running: gpp -w 3-1.cpp
+
+
+Running: gpp -w 4-1.cpp
+
+
+Running: gpp -w 5-1.cpp
+
+
+Running: gpp -w 5-2.cpp
+
+
+Running: gpp -w 6-1.cpp
+
+
+Running: gpp -w 7-1.cpp
+
+
+Running: gpp -w 7-2.cpp
+
+
+Running: gpp -w 7-3.cpp
+
+
+Running: gpp -w 7-4.cpp
+
+
+Running: gpp -w 7-5.cpp
+
+
+Running: gpp -w 7-6.cpp -------- OK -------------
+7-6.cpp:10: boost/smart_ptr.hpp: No such file or directory (ENOENT)
+
+
+Running: gpp -w 8-1.cpp ----------- Fixed --------------
+8-1.cpp: In function `int main()':
+8-1.cpp:14: `auto_ptr' undeclared (first use this function)
+8-1.cpp:14: (Each undeclared identifier is reported only once
+8-1.cpp:14: for each function it appears in.)
+8-1.cpp:14: parse error before `>'
+8-1.cpp:15: parse error before `>'
+8-1.cpp:19: `pw1' undeclared (first use this function)
+8-1.cpp:19: `pw2' undeclared (first use this function)
+
+
+Running: gpp -w 8-2.cpp -------------- on purpose --------------
+8-2.cpp:11: parse error before `&'
+8-2.cpp: In function `bool widgetAPCompare(...)':
+8-2.cpp:14: `lhs' undeclared (first use this function)
+8-2.cpp:14: (Each undeclared identifier is reported only once
+8-2.cpp:14: for each function it appears in.)
+8-2.cpp:14: `rhs' undeclared (first use this function)
+8-2.cpp: At top level:
+8-2.cpp:17: parse error before `&'
+8-2.cpp:18: `operator <<(...)' must have an argument of class or enumerated type
+8-2.cpp:18: `operator <<(...)' must take exactly two arguments
+8-2.cpp: In function `class ostream & operator <<(...)':
+8-2.cpp:19: `os' undeclared (first use this function)
+8-2.cpp:19: `wp' undeclared (first use this function)
+8-2.cpp: In function `int main()':
+8-2.cpp:28: `auto_ptr' undeclared (first use this function)
+8-2.cpp:28: parse error before `>'
+8-2.cpp:29: parse error before `>'
+8-2.cpp:30: parse error before `>'
+8-2.cpp:31: parse error before `>'
+8-2.cpp:34: parse error before `>'
+8-2.cpp:35: `widgets' undeclared (first use this function)
+8-2.cpp:35: `pw1' undeclared (first use this function)
+8-2.cpp:36: `pw2' undeclared (first use this function)
+8-2.cpp:37: `pw3' undeclared (first use this function)
+8-2.cpp:38: `pw4' undeclared (first use this function)
+
+
+Running: gpp -w 9-1.cpp
+
+
+Running: gpp -w 9-2.cpp
+
+
+Running: gpp -w 9-3.cpp
+
+
+Running: gpp -w 9-4.cpp
+
+
+Running: gpp -w 10-1.cpp
+In file included from 10-1.cpp:7:
+SpecialAllocator.h:8: limits: No such file or directory (ENOENT)
+
+
+Running: gpp -w 11-1.cpp
+In file included from 11-1.cpp:12:
+SharedMemoryAllocator.h:8: limits: No such file or directory (ENOENT)
+In file included from 11-1.cpp:13:
+SpecificHeapAllocator.h:8: limits: No such file or directory (ENOENT)
+
+
+Running: gpp -w 12-1.cpp ------ fixed ---------
+12-1.cpp:16: ANSI C++ forbids declaration `getMutexFor' with no type
+12-1.cpp:19: ANSI C++ forbids declaration `releaseMutexFor' with no type
+
+
+Running: gpp -w 12-2.cpp ----------- fixed ------------
+12-2.cpp:16: ANSI C++ forbids declaration `getMutexFor' with no type
+12-2.cpp:19: ANSI C++ forbids declaration `releaseMutexFor' with no type
+
+
+Running: gpp -w 14-1.cpp  --------- string class missing push_back -----------
+14-1.cpp: In function `int main()':
+14-1.cpp:31: no matching function for call to `basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> >::push_back (char)'
+
+
+Running: gpp -w 16-1.cpp
+
+
+Running: gpp -w 16-2.cpp
+
+
+Running: gpp -w 16-3.cpp
+
+
+Running: gpp -w 17-1.cpp ------------ string missing push_back ------------
+17-1.cpp: In function `int main()':
+17-1.cpp:43: no matching function for call to `basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> >::push_back (char)'
+
+
+Running: gpp -w 18-1.cpp ----------- on purpose ------------------
+18-1.cpp: In function `int main()':
+18-1.cpp:25: initialization to `bool *' from `_Bit_reference *'
+
+
+Running: gpp -w 19-1.cpp
+
+
+Running: gpp -w 20-1.cpp
+
+
+Running: gpp -w 20-2.cpp
+
+
+Running: gpp -w 21-1.cpp
+
+
+Running: gpp -w 21-2.cpp
+
+
+Running: gpp -w 21-3.cpp
+
+
+Running: gpp -w 21-4.cpp
+
+
+Running: gpp -w 22-1.cpp ------------ on purpose --------------
+22-1.cpp: In function `int main()':
+22-1.cpp:22: assignment of read-only member `pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > >::first'
+22-1.cpp:30: assignment of read-only member `pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > >::first'
+
+
+Running: gpp -w 22-2.cpp
+
+
+Running: gpp -w 23-1.cpp
+
+
+Running: gpp -w 23-2.cpp
+
+
+Running: gpp -w 24-1.cpp
+
+
+Running: gpp -w 25-1.cpp
+
+
+Running: gpp -w 26-1.cpp ----------- on purpose ------------------
+26-1.cpp: In function `int main()':
+26-1.cpp:30: no match for `main()::Iter & == main()::ConstIter &'
+e:/gpp/lang/cxx/stl_deque.h:205: candidates are: bool _Deque_iterator<int,int &,int *,0>::operator ==(const _Deque_iterator<int,int &,int *,0> &) const
+26-1.cpp:42: no match for `_Deque_iterator<int,const int &,const int &,0> <= main()::Iter &'
+
+
+Running: gpp -w 27-1.cpp
+
+
+Running: gpp -w 28-1.cpp
+
+
+Running: gpp -w 29-1.cpp
+29-1.cpp: In function `int main()':
+29-1.cpp:43: `istreambuf_iterator' undeclared (first use this function)
+29-1.cpp:43: (Each undeclared identifier is reported only once
+29-1.cpp:43: for each function it appears in.)
+29-1.cpp:43: parse error before `>'
+29-1.cpp:44: template-id `istreambuf_iterator<char>' in declaration of primary template
+29-1.cpp:44: parse error before `)'
+
+
+Running: gpp -w 30-1.cpp
+
+
+Running: gpp -w 31-1.cpp
+
+
+Running: gpp -w 32-1.cpp
+
+
+Running: gpp -w 33-1.cpp ----------- OK -----------
+In file included from 33-1.cpp:10:
+smart_ptr.h:52: boost/config.hpp: No such file or directory (ENOENT)
+In file included from 33-1.cpp:10:
+smart_ptr.h:56: boost/utility.hpp: No such file or directory (ENOENT)
+
+
+Running: gpp -w 34-1.cpp
+
+
+Running: gpp -w 35-1.cpp
+
+
+Running: gpp -w 35-2.cpp
+
+
+Running: gpp -w 35-3.cpp
+
+
+Running: gpp -w 36-1.cpp
+
+
+Running: gpp -w 37-1.cpp
+
+
+Running: gpp -w 37-2.cpp
+
+
+Running: gpp -w 37-3.cpp
+
+
+Running: gpp -w 37-4.cpp
+
+
+Running: gpp -w 38-1.cpp
+
+
+Running: gpp -w 39-1.cpp
+
+
+Running: gpp -w 40-1.cpp
+
+
+Running: gpp -w 41-1.cpp
+
+
+Running: gpp -w 42-1.cpp
+
+
+Running: gpp -w 43-1.cpp
+
+
+Running: gpp -w 43-2.cpp ---------- OK, just need to remove compose.h header file ----
+In file included from 43-2.cpp:9:
+compose.h:16: redefinition of `class unary_compose<_Operation1,_Operation2>'
+e:/gpp/lang/cxx/stl_function.h:253: previous definition here
+compose.h:18: invalid member template declaration `_M_fn1'
+compose.h:19: invalid member template declaration `_M_fn2'
+compose.h:32: redefinition of `template <class _Operation1, class _Operation2> class unary_compose<_Operation1,_Operation2> compose1(const _Operation1 &, const _Operation2 &)'
+e:/gpp/lang/cxx/stl_function.h:258: `template <class _Operation1, class _Operation2> class unary_compose<_Operation1,_Operation2> compose1(const _Operation1 &, const _Operation2 &)' previously declared here
+compose.h:32: redefinition of `class unary_compose<_Operation1,_Operation2> compose1(const _Operation1 &, const _Operation2 &)'
+e:/gpp/lang/cxx/stl_function.h:258: `class unary_compose<_Operation1,_Operation2> compose1(const _Operation1 &, const _Operation2 &)' previously defined here
+compose.h:39: redefinition of `class binary_compose<_Operation1,_Operation2,_Operation3>'
+e:/gpp/lang/cxx/stl_function.h:278: previous definition here
+compose.h:41: invalid member template declaration `_M_fn1'
+compose.h:42: invalid member template declaration `_M_fn2'
+compose.h:43: invalid member template declaration `_M_fn3'
+compose.h:58: redefinition of `template <class _Operation1, class _Operation2, class _Operation3> class binary_compose<_Operation1,_Operation2,_Operation3> compose2(const _Operation1 &, const _Operation2 &, const _Operation3 &)'
+e:/gpp/lang/cxx/stl_function.h:284: `template <class _Operation1, class _Operation2, class _Operation3> class binary_compose<_Operation1,_Operation2,_Operation3> compose2(const _Operation1 &, const _Operation2 &, const _Operation3 &)' previously declared here
+compose.h:58: redefinition of `class binary_compose<_Operation1,_Operation2,_Operation3> compose2(const _Operation1 &, const _Operation2 &, const _Operation3 &)'
+e:/gpp/lang/cxx/stl_function.h:284: `class binary_compose<_Operation1,_Operation2,_Operation3> compose2(const _Operation1 &, const _Operation2 &, const _Operation3 &)' previously defined here
+compose.h: In method `binary_compose<logical_and<bool>,binder2nd<greater<int> >,binder2nd<less<int> > >::binary_compose(const logical_and<bool> &, const binder2nd<greater<int> > &, const binder2nd<less<int> > &)':
+compose.h:60:   instantiated from `compose2<logical_and<bool>, binder2nd<greater<int> >, binder2nd<less<int> > >(const logical_and<bool> &, const binder2nd<greater<int> > &, const binder2nd<less<int> > &)'
+43-2.cpp:68:   instantiated from here
+compose.h:47: confused by earlier errors, bailing out
+
+
+Running: gpp -w 44-1.cpp
+
+
+Running: gpp -w 45-1.cpp
+
+
+Running: gpp -w 45-2.cpp
+
+
+Running: gpp -w 46-1.cpp
+e:/gpp/tmp\ccmlmkYj.o(.text+0x25f):46-1.cpp: undefined reference to `sort(double *, double *, bool (*)(double, double))'
+collect2: ld returned 1 exit status
+
+
+Running: gpp -w 47-1.cpp
+
+
+Running: gpp -w 48-1.cpp
+
+
+Running: gpp -w 49-1.cpp ------------ on purpose ---------------
+e:/gpp/lang/cxx/stlalgobase.h: In function `class ostream_iterator<basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > __copy<string **, ostream_iterator<basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > >, ptrdiff_t>(string **, string **, ostream_iterator<basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > >, random_access_iterator_tag, ptrdiff_t *)':
+e:/gpp/lang/cxx/stlalgobase.h:161:   instantiated from `__copy_dispatch<basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > **,ostream_iterator<basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > >,__true_type>::copy(string **, string **, ostream_iterator<basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > >)'
+e:/gpp/lang/cxx/stlalgobase.h:188:   instantiated from `copy<string **, ostream_iterator<basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > >(string **, string **, ostream_iterator<basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > >)'
+49-1.cpp:41:   instantiated from here
+e:/gpp/lang/cxx/stlalgobase.h:139: no match for `ostream_iterator<basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > & = string *&'
+e:/gpp/lang/cxx/stl_iterator.h:889: candidates are: class ostream_iterator<basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > & ostream_iterator<basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > >::operator =(const string &)
+e:/gpp/lang/cxx/stl_iterator.h:897:                 class ostream_iterator<basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > & ostream_iterator<basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > >::operator =(const ostream_iterator<basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > &)
+e:/gpp/lang/cxx/stl_algo.h: In function `void sort<_List_iterator<int,int &,int *> >(_List_iterator<int,int &,int *>, _List_iterator<int,int &,int *>)':
+49-1.cpp:44:   instantiated from here
+e:/gpp/lang/cxx/stl_algo.h:1320: no match for `_List_iterator<int,int &,int *> & - _List_iterator<int,int &,int *> &'
+e:/gpp/lang/cxx/stl_algo.h: In function `void __final_insertion_sort<_List_iterator<int,int &,int *> >(_List_iterator<int,int &,int *>, _List_iterator<int,int &,int *>)':
+e:/gpp/lang/cxx/stl_algo.h:1321:   instantiated from here
+e:/gpp/lang/cxx/stl_algo.h:1246: no match for `_List_iterator<int,int &,int *> & - _List_iterator<int,int &,int *> &'
+e:/gpp/lang/cxx/stl_algo.h:1247: no match for `_List_iterator<int,int &,int *> & + const int &'
+e:/gpp/lang/cxx/stl_algo.h:1248: no match for `_List_iterator<int,int &,int *> & + const int &'
+e:/gpp/lang/cxx/stl_algo.h: In function `void __insertion_sort<_List_iterator<int,int &,int *> >(_List_iterator<int,int &,int *>, _List_iterator<int,int &,int *>)':
+e:/gpp/lang/cxx/stl_algo.h:1251:   instantiated from `__final_insertion_sort<_List_iterator<int,int &,int *> >(_List_iterator<int,int &,int *>, _List_iterator<int,int &,int *>)'
+e:/gpp/lang/cxx/stl_algo.h:1321:   instantiated from here
+e:/gpp/lang/cxx/stl_algo.h:1202: no match for `_List_iterator<int,int &,int *> & + int'
+e:/gpp/lang/cxx/stl_algo.h: In function `void __linear_insert<_List_iterator<int,int &,int *>, int>(_List_iterator<int,int &,int *>, _List_iterator<int,int &,int *>, int *)':
+e:/gpp/lang/cxx/stl_algo.h:1203:   instantiated from `__insertion_sort<_List_iterator<int,int &,int *> >(_List_iterator<int,int &,int *>, _List_iterator<int,int &,int *>)'
+e:/gpp/lang/cxx/stl_algo.h:1251:   instantiated from `__final_insertion_sort<_List_iterator<int,int &,int *> >(_List_iterator<int,int &,int *>, _List_iterator<int,int &,int *>)'
+e:/gpp/lang/cxx/stl_algo.h:1321:   instantiated from here
+e:/gpp/lang/cxx/stl_algo.h:1180: no match for `_List_iterator<int,int &,int *> & + int'
+
+
+Running: gpp -w 50-1.cpp --------- Needs SGI Library ---------------------------------
+50-1.cpp:16: redefinition of `struct _Select1st<_Pair>'
+e:/gpp/lang/cxx/stl_function.h:339: previous definition here
+50-1.cpp:24: redefinition of `struct _Select2nd<_Pair>'
+e:/gpp/lang/cxx/stl_function.h:347: previous definition here
+50-1.cpp:31: redefinition of `struct select1st<_Pair>'
+e:/gpp/lang/cxx/stl_function.h:349: previous definition here
+50-1.cpp:32: redefinition of `struct select2nd<_Pair>'
+e:/gpp/lang/cxx/stl_function.h:350: previous definition here
+e:/gpp/lang/cxx/stl_tree.h: In method `struct pair<_Rb_tree_iterator<pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > >,pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > &,pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > *>,bool> _Rb_tree<int,pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > >,_Select1st<pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > >,less<int>,allocator<basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > >::insert_unique(const pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > &)':
+e:/gpp/lang/cxx/stl_map.h:162:   instantiated from here
+e:/gpp/lang/cxx/stl_tree.h:884: no match for call to `(_Select1st<pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > >) (const pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > &)'
+50-1.cpp:17: candidates are: const int & _Select1st<pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > >::operator ()<pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > >(const pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > &) const
+e:/gpp/lang/cxx/stl_tree.h: In function `static const int & _Rb_tree<int,pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > >,_Select1st<pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > >,less<int>,allocator<basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > >::_S_key(_Rb_tree_node<pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > > *)':
+e:/gpp/lang/cxx/stl_tree.h:884:   instantiated from `_Rb_tree<int,pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > >,_Select1st<pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > >,less<int>,allocator<basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > >::insert_unique(const pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > &)'
+e:/gpp/lang/cxx/stl_map.h:162:   instantiated from here
+e:/gpp/lang/cxx/stl_tree.h:597: no match for call to `(_Select1st<pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > >) (pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > &)'
+50-1.cpp:17: candidates are: const int & _Select1st<pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > >::operator ()<pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > >(const pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > &) const
+e:/gpp/lang/cxx/stl_tree.h: In method `struct _Rb_tree_iterator<pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > >,pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > &,pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > *> _Rb_tree<int,pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > >,_Select1st<pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > >,less<int>,allocator<basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > >::_M_insert(_Rb_tree_node_base *, _Rb_tree_node_base *, const pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > &)':
+e:/gpp/lang/cxx/stl_tree.h:890:   instantiated from `_Rb_tree<int,pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > >,_Select1st<pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > >,less<int>,allocator<basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > >::insert_unique(const pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > &)'
+e:/gpp/lang/cxx/stl_map.h:162:   instantiated from here
+e:/gpp/lang/cxx/stl_tree.h:829: no match for call to `(_Select1st<pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > >) (const pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > &)'
+50-1.cpp:17: candidates are: const int & _Select1st<pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > >::operator ()<pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > >(const pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > &) const
+e:/gpp/lang/cxx/stl_tree.h: In function `static const int & _Rb_tree<int,pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > >,_Select1st<pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > >,less<int>,allocator<basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > >::_S_key(_Rb_tree_node_base *)':
+e:/gpp/lang/cxx/stl_tree.h:893:   instantiated from `_Rb_tree<int,pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > >,_Select1st<pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > >,less<int>,allocator<basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > >::insert_unique(const pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > &)'
+e:/gpp/lang/cxx/stl_map.h:162:   instantiated from here
+e:/gpp/lang/cxx/stl_tree.h:610: no match for call to `(_Select1st<pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > >) (pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > &)'
+50-1.cpp:17: candidates are: const int & _Select1st<pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > >::operator ()<pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > >(const pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > &) const
+e:/gpp/lang/cxx/stl_tree.h: In method `struct pair<_Rb_tree_iterator<pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > >,pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > &,pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > *>,bool> _Rb_tree<int,pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > >,_Select1st<pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > >,less<int>,allocator<basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > >::insert_unique(const pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > &)':
+e:/gpp/lang/cxx/stl_map.h:162:   instantiated from here
+e:/gpp/lang/cxx/stl_tree.h:893: no match for call to `(_Select1st<pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > >) (const pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > &)'
+50-1.cpp:17: candidates are: const int & _Select1st<pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > >::operator ()<pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > >(const pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > &) const
+e:/gpp/lang/cxx/stl_algo.h: In function `class ostream_iterator<int> transform<_Rb_tree_iterator<pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > >,pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > &,pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > *>, ostream_iterator<int>, select1st<pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > > >(_Rb_tree_iterator<pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > >,pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > &,pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > *>, _Rb_tree_iterator<pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > >,pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > &,pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > *>, ostream_iterator<int>, select1st<pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > >)':
+50-1.cpp:52:   instantiated from here
+e:/gpp/lang/cxx/stl_algo.h:451: no match for call to `(select1st<pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > >) (pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > &)'
+e:/gpp/lang/cxx/stl_algo.h: In function `class back_insert_iterator<vector<basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> >,allocator<basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > > > transform<_Rb_tree_iterator<pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > >,pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > &,pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > *>, back_insert_iterator<vector<basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> >,allocator<basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > > >, select2nd<pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > > >(_Rb_tree_iterator<pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > >,pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > &,pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > *>, _Rb_tree_iterator<pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > >,pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > &,pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > *>, back_insert_iterator<vector<basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> >,allocator<basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > > >, select2nd<pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > >)':
+50-1.cpp:57:   instantiated from here
+e:/gpp/lang/cxx/stl_algo.h:451: no match for call to `(select2nd<pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > >) (pair<const int,basic_string<char,string_char_traits<char>,__default_alloc_template<false,0> > > &)'
+
+
+Running: gpp -w 50-2.cpp
+
+
+Running: gpp -w 50-3.cpp ----------------- on purpose -------------------
+e:/gpp/lang/cxx/stl_function.h: In instantiation of `binder2nd<mem_fun1_t<int,Widget,istream &> >':
+e:/gpp/lang/cxx/stl_function.h:231:   instantiated from `bind2nd<mem_fun1_t<int,Widget,istream &>, _IO_istream_withassign>(const mem_fun1_t<int,Widget,istream &> &, const _IO_istream_withassign &)'
+50-3.cpp:29:   instantiated from here
+e:/gpp/lang/cxx/stl_function.h:221: forming reference to reference type `istream &const'
+e:/gpp/lang/cxx/stl_function.h: In function `binder2nd<mem_fun1_t<int,Widget,istream &> >::binder2nd(...)':
+e:/gpp/lang/cxx/stl_function.h:233:   instantiated from `bind2nd<mem_fun1_t<int,Widget,istream &>, _IO_istream_withassign>(const mem_fun1_t<int,Widget,istream &> &, const _IO_istream_withassign &)'
+50-3.cpp:29:   instantiated from here
+e:/gpp/lang/cxx/stl_function.h:221: Internal compiler error in `layout_decl', at stor-layout.c:247
+Please submit a full bug report.
+See <URL:http://www.gnu.org/software/gcc/faq.html#bugreport> for instructions.
+
+
+Running: gpp -w a-1.cpp
+a-1.cpp:109: macro `toupper' used with too many (2) args
+a-1.cpp:109: macro `toupper' used with too many (2) args
+
+Running: gpp -w b-1.cpp
+
+Running: gpp -w b-2.cpp
+

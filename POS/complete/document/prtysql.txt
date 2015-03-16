@@ -1,0 +1,10 @@
+-- 
+-- 資料表格式： `prty`
+-- 
+
+CREATE TABLE `prty` (
+  `prtyno` varchar(10) NOT NULL,
+  `prtyname` varchar(40) NOT NULL,
+  PRIMARY KEY  (`prtyno`)
+) ENGINE=MyISAM DEFAULT CHARSET=big5;
+

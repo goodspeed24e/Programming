@@ -1,0 +1,11 @@
+-- 
+-- 資料表格式： `purchmst`
+-- 
+
+CREATE TABLE `purchmst` (
+  `purcmtranno` varchar(10) NOT NULL,
+  `purcmvend` varchar(10) NOT NULL,
+  `purcmdate` date NOT NULL,
+  `purcmtype` varchar(10) NOT NULL,
+  PRIMARY KEY  (`purcmtranno`)
+) ENGINE=MyISAM DEFAULT CHARSET=big5

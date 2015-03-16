@@ -1,0 +1,6 @@
+"D:\Mydata\talk\book\chap8\tools\TalkUSB\Spell\F3xx_Talk_Control_F340.OBJ",
+"D:\Mydata\talk\book\chap8\tools\TalkUSB\Spell\F3xx_USB0_Descriptor.OBJ",
+"D:\Mydata\talk\book\chap8\tools\TalkUSB\Spell\F3xx_USB0_InterruptServiceRoutine.OBJ",
+"D:\Mydata\talk\book\chap8\tools\TalkUSB\Spell\F3xx_USB0_Main.OBJ",
+"D:\Mydata\talk\book\chap8\tools\TalkUSB\Spell\F3xx_USB0_ReportHandler.OBJ",
+"D:\Mydata\talk\book\chap8\tools\TalkUSB\Spell\F3xx_USB0_Standard_Requests.OBJ"  TO "D:\Mydata\talk\book\chap8\tools\TalkUSB\Spell\Spell" RS(256) PL(68) PW(78) 
